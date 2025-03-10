@@ -34,7 +34,7 @@ class Helpers
     }
     static public function getJam($tanggal)
     {
-        $hariInggris = date('H', strtotime($tanggal));
+        $hariInggris = date('H:t', strtotime($tanggal));
         return self::$hariIndonesia[$hariInggris] ?? $hariInggris;
     }
 
