@@ -69,7 +69,9 @@ class InvitationsResource extends Resource
                                         TextInput::make("title")
                                             ->placeholder("Akad")
                                             ->required(),
-                                        DateTimePicker::make("event_date")
+                                        DateTimePicker::make("event_date_start")
+                                            ->required(),
+                                        DateTimePicker::make("event_date_end")
                                             ->required(),
                                         Textarea::make("address")
                                             ->placeholder("Jl di Ponogoro No 20, Bataan, Bondowoso, Jawa Timur")
@@ -78,6 +80,11 @@ class InvitationsResource extends Resource
                                         TextInput::make("map_address")
                                             ->required()
                                             ->placeholder('Enter Google Maps link or coordinates')
+                                            ->helperText('Example: https://maps.google.com/?q=latitude,longitude')
+                                            ->columnSpan(2),
+                                        TextInput::make("map_address_preview")
+                                            ->required()
+                                            ->placeholder('Enter Google Maps embed')
                                             ->helperText('Example: https://maps.google.com/?q=latitude,longitude')
                                             ->columnSpan(2),
                                         Toggle::make("isPrimary")
@@ -135,6 +142,7 @@ class InvitationsResource extends Resource
             //
         ];
     }
+
 
     public static function getPages(): array
     {

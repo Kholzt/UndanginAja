@@ -18,7 +18,7 @@ return new class extends Migration
                 ->cascadeOnUpdate();
             $table->string("name", 70);
             $table->text("comment");
-            $table->foreignId("comment_id")->references("id")->on("comments")->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreignId("comment_id")->nullable()->references("id")->on("comments")->cascadeOnDelete()->cascadeOnUpdate();
             $table->timestamps();
         });
     }

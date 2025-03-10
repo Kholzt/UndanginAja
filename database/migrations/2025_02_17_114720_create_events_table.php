@@ -17,9 +17,11 @@ return new class extends Migration
                 ->cascadeOnDelete()
                 ->cascadeOnUpdate();
             $table->string("title", 100);
-            $table->dateTime("event_date");
+            $table->dateTime("event_date_start");
+            $table->dateTime("event_date_end")->nullable();
             $table->string("address");
             $table->string("map_address");
+            $table->text("map_address_preview");
             $table->tinyInteger("isPrimary")->default(false);
             $table->timestamps();
         });

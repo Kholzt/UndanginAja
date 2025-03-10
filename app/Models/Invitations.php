@@ -23,6 +23,6 @@ class Invitations extends Model
     }
     public function primaryEvents()
     {
-        return $this->hasMany(Events::class, 'invitation_id')->where("isPrimary", 1);
+        return $this->hasOne(Events::class, 'invitation_id')->where("isPrimary", 1);
     }
 }

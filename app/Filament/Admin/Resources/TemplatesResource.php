@@ -3,14 +3,14 @@
 namespace App\Filament\Admin\Resources;
 
 use App\Filament\Admin\Resources\TemplatesResource\Pages;
-use App\Filament\Admin\Resources\TemplatesResource\RelationManagers;
 use App\Models\Categories;
 use App\Models\Templates;
-use Filament\Forms;
+use Filament\Tables\Actions\Action;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
+use Filament\Notifications\Notification;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Columns\ImageColumn;
@@ -67,14 +67,17 @@ class TemplatesResource extends Resource
                         );
                     }
                 ),
-                ImageColumn::make("thumbnail"),
+                ImageColumn::make("thumbnail")->size(70),
                 TextColumn::make("title")->sortable()->searchable(),
                 TextColumn::make("price")->money('IDR')->sortable(),
                 TextColumn::make("discount")->sortable(),
-                TextColumn::make("status")->badge()->getStateUsing(fn($record) => $record->status == "hide" ? "Non Active" : "Active")->sortable(),
+                TextColumn::make("status")->badge()
+                    ->color(fn($record) => $record->status == "show" ? "success" : "gray")
+                    ->getStateUsing(fn($record) => $record->status == "hide" ? "Non Active" : "Active")->sortable(),
             ])
             ->filters([
-                SelectFilter::make('Status')
+
+                SelectFilter::make('status')
                     ->options([
                         'show' => 'Active',
                         'hide' => 'Non Active',

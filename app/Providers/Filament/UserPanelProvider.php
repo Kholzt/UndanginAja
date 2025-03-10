@@ -30,6 +30,7 @@ class UserPanelProvider extends PanelProvider
                 'primary' => Color::Amber,
             ])
             ->topNavigation()
+            ->brandName("Undangin Aja")
             ->discoverResources(in: app_path('Filament/User/Resources'), for: 'App\\Filament\\User\\Resources')
             ->discoverPages(in: app_path('Filament/User/Pages'), for: 'App\\Filament\\User\\Pages')
             ->pages([
