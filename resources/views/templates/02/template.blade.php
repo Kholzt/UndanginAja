@@ -11,6 +11,10 @@
     <title>{{ explode(" ",$title)[0] }} {{ explode(" ",$title)[1] }} {{ explode(" ",$title)[2] }}</title>
 
     <style>
+        body {
+            height: 100vh !important;
+        }
+
         .container {
             max-width: 410px;
             /* height: calc(100vh - 80px); */
@@ -217,7 +221,7 @@
         </div>
     </nav>
     <section class="active" id="home">
-        <div class="container position-relative justify-content-center" style="background-image: url(assets/image/02/bg.png);background-position:center;background-size: cover;height: 500px;">
+        <div class="container position-relative justify-content-center" style="background-image: url(assets/image/02/bg.png);background-position:center;background-size: cover;">
 
             <div class="position-relative text-center" style="z-index: 1;">
 
@@ -253,7 +257,7 @@
 
     </section>
     <section id="quotes">
-        <div class="container position-relative justify-content-center" style="background-image: url(assets/image/02/bg.png);background-position:center;background-size: cover;height: 500px;">
+        <div class="container position-relative justify-content-center" style="background-image: url(assets/image/02/bg.png);background-position:center;background-size: cover;">
             <h4 class="fw-bold text-center item-bottom" style="max-width: 100%;width: 600px;">وَمِنۡ اٰيٰتِهٖۤ اَنۡ خَلَقَ
                 لَكُمۡ مِّنۡ
                 اَنۡفُسِكُمۡ اَزۡوَاجًا لِّتَسۡكُنُوۡۤا
@@ -282,7 +286,7 @@
 
     </section>
     <section id="mempelai">
-        <div class="container position-relative" style="background-image: url(assets/image/02/bg.png);background-position:center;background-size: cover;height: 500px;">
+        <div class="container position-relative" style="background-image: url(assets/image/02/bg.png);background-position:center;background-size: cover;">
 
             <img src="{{ asset("assets/image/02/bismillah.png") }}" class="item-top" style="width:45%" alt="">
             <h2 style="font-size: 28px;" class="mb-0 mt-4 great-vibes text-primary item-top">Undangan Pernikahan</h2>
@@ -336,17 +340,21 @@
     <script src="./assets/js/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-        $(document).on("load resize", function() {
-            var totalHeight = $(window).height(); // Ambil tinggi jendela browser
-            var elementHeight = $("nav").outerHeight(true); // Ambil tinggi elemen (termasuk margin)
+        $(document).ready(function() {
+            function adjustHeight() {
+                var totalHeight = $(window).height(); // Ambil tinggi jendela browser
+                var elementHeight = $("nav").outerHeight(true); // Ambil tinggi elemen (termasuk margin)
 
-            var resultHeight = totalHeight - elementHeight;
-
-            const container = $(".container")
-            if (!container.parent("nav")) {
-                container.css("height", resultHeight)
+                var resultHeight = totalHeight - elementHeight;
+                const container = $(".container")
+                console.log(resultHeight);
+                $(".container").not("nav .container").css("height", resultHeight);
             }
+
+            // Jalankan saat halaman siap dan setiap kali jendela diubah ukurannya
+            $(window).on("load resize", adjustHeight);
         });
+
 
         function navigate(id, el) {
             $("section").removeClass("active")
