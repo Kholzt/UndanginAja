@@ -232,7 +232,7 @@
                     <h2 style="font-size: 28px;" class="mb-0 mt-4 great-vibes text-primary">Save The Date</h2>
                     <p class="text-uppercase text-center">For The Wedding <br> Ceremony Of</p>
                 </div>
-                <h1 class="great-vibes  text-center text-primary item-zoom">{{ explode(" ",$title)[0] }}<br>{{ explode(" ",$title)[1] }}<br>{{ explode(" ",$title)[2] }}</h1>
+                <h1 class="great-vibes  text-center text-primary item-zoom text-capitalize">{{ explode(" ",$title)[0] }}<br>{{ explode(" ",$title)[1] }}<br>{{ explode(" ",$title)[2] }}</h1>
                 <div class="item-bottom">
                     <h6 class=" mb-4 comic-neue ">Kpd. Bpk/Ibu/Saudara/I</h6>
                     <div class="d-flex  align-items-center gap item-bottom">
