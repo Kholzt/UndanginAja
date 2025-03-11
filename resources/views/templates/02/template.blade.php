@@ -13,7 +13,7 @@
     <style>
         .container {
             max-width: 410px;
-            min-height: calc(100vh - 80px);
+            /* height: calc(100vh - 80px); */
             margin: auto;
             overflow: hidden;
             width: 100%;
@@ -206,7 +206,7 @@
 </head>
 
 <body>
-    <nav class="position-absolute bottom-0 w-100" style="z-index: 11;">
+    <nav class="position-absolute bottom-0 w-100 " style="z-index: 11;">
         <div class="container py-2 " style="min-height: auto;background-color: #efebe8;">
             <ul class="d-flex justify-content-around gap-2 list-unstyled w-100 m-0 glacial-indifference " style="font-size: 14px;">
                 <li class="d-flex text-primary flex-column align-items-center p-3 rounded nav-menu nav-active" style="cursor: pointer;" onclick="navigate('home',this)"><i class="fs-6  fa fa-home"></i>Home</li>
@@ -336,6 +336,18 @@
     <script src="./assets/js/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
+        $(document).on("load resize", function() {
+            var totalHeight = $(window).height(); // Ambil tinggi jendela browser
+            var elementHeight = $("nav").outerHeight(true); // Ambil tinggi elemen (termasuk margin)
+
+            var resultHeight = totalHeight - elementHeight;
+
+            const container = $(".container")
+            if (!container.parent("nav")) {
+                container.css("height", resultHeight)
+            }
+        });
+
         function navigate(id, el) {
             $("section").removeClass("active")
             $("#" + id).addClass("active");
