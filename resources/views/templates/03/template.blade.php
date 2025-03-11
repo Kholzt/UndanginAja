@@ -213,20 +213,49 @@
     <nav class="position-absolute bottom-0 w-100 " style="z-index: 11;">
         <div class="container py-2 " style="min-height: auto;background-color: #efebe8;">
             <ul class="d-flex justify-content-around gap-2 list-unstyled w-100 m-0 glacial-indifference " style="font-size: 14px;">
-                <li class="d-flex text-primary flex-column align-items-center p-3 rounded nav-menu nav-active" style="cursor: pointer;" onclick="navigate('home',this)"><i class="fs-6  fa fa-home"></i>Home</li>
+                <li class="d-flex text-primary flex-column align-items-center p-3 rounded nav-menu " style="cursor: pointer;" onclick="navigate('home',this)"><i class="fs-6  fa fa-home"></i>Home</li>
                 <li class="d-flex text-primary flex-column align-items-center p-3 rounded nav-menu" style="cursor: pointer;" onclick="navigate('quotes',this)"><i class="fs-6  fa fa-clipboard"></i>Quotes</li>
                 <li class="d-flex text-primary flex-column align-items-center p-3 rounded nav-menu" style="cursor: pointer;" onclick="navigate('mempelai',this)"><i class="fs-6  fa fa-heart"></i>Mempelai</li>
                 <li class="d-flex text-primary flex-column align-items-center p-3 rounded nav-menu" style="cursor: pointer;" onclick="navigate('acara',this)"><i class="fs-6  fa fa-calendar"></i>Acara</li>
             </ul>
         </div>
     </nav>
-    <button id="musicToggle" class=" shadow-sm btn btn-light rounded-circle position-fixed " style="top:50%;right:20px;transform: translateY(-50%);"><i class="fa fa-pause"></i></button>
+    <button id="musicToggle" class=" shadow-sm btn btn-light rounded-circle position-fixed " style="top:50%;right:20px;transform: translateY(-50%);z-index: 999;"><i class="fa fa-pause"></i></button>
     <audio id="myAudio" src="{{ asset('./assets/song/02/backsound.mp3') }}"
         type="audio/mpeg" loop="loop">
-        <source src="./assets/song/backsound.mp3"
+        <source src="{{ asset('./assets/song/02/backsound.mp3') }}"
             type="audio/mpeg"> Your user agent does not support the HTML5 Audio element.
     </audio>
-    <section class="active" id="home">
+    <section class="active" id="opening">
+        <div class="container position-relative justify-content-center opening" style="background-image: url(assets/image/02/bg.png);background-position:center;background-size: cover;height: 100vh !important;">
+
+            <div class="position-relative text-center" style="z-index: 1;">
+
+            </div>
+            <div class="position-relative text-center" style="z-index: 1;">
+
+                <div class="item-top">
+                    <h2 style="font-size: 28px;" class="mb-0 mt-4 great-vibes text-primary">Save The Date</h2>
+                    <p class="text-uppercase text-center">For The Wedding <br> Ceremony Of</p>
+                </div>
+                <h1 class="great-vibes  text-center text-primary item-zoom text-capitalize">{{ explode(" ",$title)[0] }}<br>{{ explode(" ",$title)[1] }}<br>{{ explode(" ",$title)[2] }}</h1>
+                <div class="item-bottom">
+                    <h6 class=" mb-4 comic-neue ">Kpd. Bpk/Ibu/Saudara/I</h6>
+                    <button id="open-letter" class="px-4 py-2 rounded text-white" style="background-color: #ae967a;border: none;outline: none;">Open Invitation</button>
+                </div>
+            </div>
+
+            <img src="{{ asset("assets/image/02/pintu.png") }}" style="width: 80%;" class="position-absolute" alt="">
+            <img class="asset center asset-center-top" src="{{ asset("assets/image/02/center.png") }}" alt="">
+            <img class="asset center asset-center-bottom" src="{{ asset("assets/image/02/center.png") }}" alt="">
+            <img class="asset flower asset-left-top" src="{{ asset("assets/image/02/border.png") }}" alt="">
+            <img class="asset flower asset-right-bottom" src="{{ asset("assets/image/02/border.png") }}" alt="">
+            <img class="asset flower asset-right-top" src="{{ asset("assets/image/02/flower.png") }}" alt="">
+            <img class="asset flower asset-left-bottom" src="{{ asset("assets/image/02/flower.png") }}" alt="">
+        </div>
+
+    </section>
+    <section id="home">
         <div class="container position-relative justify-content-center" style="background-image: url(assets/image/02/bg.png);background-position:center;background-size: cover;">
 
             <div class="position-relative text-center" style="z-index: 1;">
@@ -379,6 +408,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
         $(document).ready(function() {
+
             function adjustHeight() {
                 var totalHeight = $(window).height(); // Ambil tinggi jendela browser
                 var elementHeight = $("nav").outerHeight(true); // Ambil tinggi elemen (termasuk margin)
@@ -386,7 +416,7 @@
                 var resultHeight = totalHeight - elementHeight;
                 const container = $(".container")
                 console.log(resultHeight);
-                $(".container").not("nav .container").css("height", resultHeight);
+                $(".container:not(.opening)").not("nav .container").css("height", resultHeight);
             }
 
             // Jalankan saat halaman siap dan setiap kali jendela diubah ukurannya
@@ -396,6 +426,7 @@
 
         $("#musicToggle").on("click", function() {
             const audio = $("#myAudio").get(0);
+
             if (audio.paused) {
                 audio.play();
                 $(this).find("i").removeClass("fa-play").addClass("fa-pause")
@@ -404,6 +435,15 @@
                 audio.pause();
             }
         });
+
+        $("nav").hide()
+        $("#open-letter").click(function() {
+            $(".first-view").addClass("hide-view");
+            $("body").removeClass("overflow-hidden")
+            $("#myAudio").get(0).play();
+            navigate("home", $("nav ul li:first"))
+            $("nav").show()
+        })
 
         function navigate(id, el) {
             $("section").removeClass("active")
