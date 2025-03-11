@@ -302,25 +302,25 @@
             <p style="font-size: 12px;"> {{ $wedding_details->parent_groom }}</p>
 
             <div class="row mb-5 justify-content-center g-4 position-relative w-100" style="z-index: 1;">
-                <div class="col-3">
+                <div class="col-sm-3 col-6">
                     <div class="card item-bottom-stack  border-0 shadow-sm justify-content-center d-flex flex-column align-items-center " style="width: 90px;height: 90px;">
                         <h2 class="mb-0" id="days">00</h2>
                         <h6>Days</h6>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-sm-3 col-6">
                     <div class="card item-bottom-stack border-0 shadow-sm justify-content-center d-flex flex-column align-items-center " style="width: 90px;height: 90px;">
                         <h2 class="mb-0" id="hours">00</h2>
                         <h6>Hours</h6>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-sm-3 col-6">
                     <div class="card item-bottom-stack border-0 shadow-sm justify-content-center d-flex flex-column align-items-center " style="width: 90px;height: 90px;">
                         <h2 class="mb-0" id="minutes">00</h2>
                         <h6>Min</h6>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-sm-3 col-6">
                     <div class="card item-bottom-stack border-0 shadow-sm justify-content-center d-flex flex-column align-items-center " style="width: 90px;height: 90px;">
                         <h2 class="mb-0" id="seconds">00</h2>
                         <h6>Sec</h6>
