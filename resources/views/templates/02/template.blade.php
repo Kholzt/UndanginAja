@@ -339,12 +339,14 @@
         <div class="container position-relative" style="background-image: url(assets/image/02/bg.png);background-position:center;background-size: cover;">
             <div class="row mb-4 w-100 justify-content-center align-items-center h-100">
                 @foreach ($events as $event)
-                <div class="col-8">
+                <div class="col-12">
                     <div
                         class=" item-bottom border-0    justify-content-center d-flex flex-column align-items-center">
                         <h1 class="great-vibes text-primary">{{ $event->title }}</h1>
-                        <p class="mb-2"><i class="fa fa-calendar text-primary"></i> {{ Helpers::getFormatTanggal($event->event_date_start) }}</p>
-                        <p class="mb-2"><i class="fa fa-clock text-primary"></i> {{ Helpers::getJam($event->event_date_start) }}- {{ $event->event_date_end ?Helpers::getJam($event->event_date_end) :"Selesai"}} </p>
+                        <div class="row text-center">
+                            <p class="mb-2 col">{{ Helpers::getFormatTanggal($event->event_date_start) }}</p>
+                            <p class="mb-2 col">{{ Helpers::getJam($event->event_date_start) }} - {{ $event->event_date_end ?Helpers::getJam($event->event_date_end) :"Selesai"}} </p>
+                        </div>
                         <p class="text-center">{{ $event->address }}</p>
                     </div>
                 </div>
