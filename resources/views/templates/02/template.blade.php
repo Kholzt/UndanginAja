@@ -352,7 +352,8 @@
             }
 
             // Jalankan saat halaman siap dan setiap kali jendela diubah ukurannya
-            $(window).on("load resize", adjustHeight);
+            adjustHeight()
+            // $(window).on("load resize", adjustHeight);
         });
 
 
