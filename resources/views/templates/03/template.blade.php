@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>{{ explode(" ",$title)[0] }} {{ explode(" ",$title)[1] }} {{ explode(" ",$title)[2] }}</title>
+    <title>{{ ucwords(implode(' ', array_slice(explode(' ', $title), 0, 3))) }}</title>
+
 
     <style>
         body {
@@ -184,7 +185,7 @@
             scroll-snap-type: y mandatory;
         }
 
-      
+
         section {
             animation: showSection;
             scroll-snap-align: start;
