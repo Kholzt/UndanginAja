@@ -334,7 +334,36 @@
             <img class="asset flower asset-right-top" src="{{ asset("assets/image/02/flower.png") }}" alt="">
             <img class="asset flower asset-left-bottom" src="{{ asset("assets/image/02/flower.png") }}" alt="">
         </div>
+    </section>
+    <section id="acara">
+        <div class="container position-relative" style="background-image: url(assets/image/02/bg.png);background-position:center;background-size: cover;">
+            <div class="row mb-4 w-100 justify-content-center align-items-center h-100">
+                @foreach ($events as $event)
+                <div class="col-8">
+                    <div
+                        class=" item-bottom border-0    justify-content-center d-flex flex-column align-items-center">
+                        <h1 class="great-vibes text-primary">{{ $event->title }}</h1>
+                        <p class="mb-2"><i class="fa fa-calendar text-primary"></i> {{ Helpers::getFormatTanggal($event->event_date_start) }}</p>
+                        <p class="mb-2"><i class="fa fa-clock text-primary"></i> {{ Helpers::getJam($event->event_date_start) }}- {{ $event->event_date_end ?Helpers::getJam($event->event_date_end) :"Selesai"}} </p>
+                        <p class="text-center">{{ $event->address }}</p>
+                    </div>
+                </div>
+                @endforeach
+            </div>
 
+            <!-- <h1 class="great-vibes item-bottom text-primary">Denah Lokasi</h1>
+            <a href="{{ $mainEvent->map_address }}"
+                class="btn btn-primary item-bottom-bounce rounded-pill mb-5 text-white px-4" target="_blank">
+                <i class="fa fa-map"></i> Lihat lokasi acara
+            </a> -->
+
+            <img class="asset center asset-center-top" src="{{ asset("assets/image/02/center.png") }}" alt="">
+            <img class="asset center asset-center-bottom" src="{{ asset("assets/image/02/center.png") }}" alt="">
+            <img class="asset flower asset-left-top" src="{{ asset("assets/image/02/border.png") }}" alt="">
+            <img class="asset flower asset-right-bottom" src="{{ asset("assets/image/02/border.png") }}" alt="">
+            <img class="asset flower asset-right-top" src="{{ asset("assets/image/02/flower.png") }}" alt="">
+            <img class="asset flower asset-left-bottom" src="{{ asset("assets/image/02/flower.png") }}" alt="">
+        </div>
     </section>
 
     <script src="./assets/js/jquery.min.js"></script>
