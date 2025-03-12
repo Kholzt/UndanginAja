@@ -376,30 +376,27 @@
         </section>
         <section id="acara">
             <div class="container position-relative" style="background-image: url(assets/image/02/bg.png);background-position:center;background-size: cover;">
-                <div class="row mb-4 w-100 justify-content-center align-items-center h-100">
-                    @foreach ($events as $index => $event)
-                    <div class="col-12">
-                        <div
-                            class=" item-bottom border-0    justify-content-center d-flex flex-column align-items-center">
-                            <h1 class="great-vibes text-primary">{{ $event->title }}</h1>
-                            <div class="row text-center">
-                                <p class="mb-2 col">{{ Helpers::getFormatTanggal($event->event_date_start) }}</p>
-                                <span class="p-0 ps-3" style="height: 50px; width: 2px; border-right: 2px solid #ae967a;"></span>
-                                <p class="mb-2 col">{{ Helpers::getJam($event->event_date_start) }} - {{ $event->event_date_end ?Helpers::getJam($event->event_date_end) :"Selesai"}} </p>
+                <div class="h-100 w-100 d-flex align-items-center">
+                    <div class="row mb-4 w-100 g-4  justify-content-center align-items-center ">
+                        @foreach ($events as $index => $event)
+                        <div class="col-12">
+                            <div class=" item-bottom border-0    justify-content-center d-flex flex-column align-items-center">
+                                <h1 class="great-vibes text-primary">{{ $event->title }}</h1>
+                                <div class="row text-center">
+                                    <p class="mb-2 col">{{ Helpers::getFormatTanggal($event->event_date_start) }}</p>
+                                    <span class="p-0 ps-3" style="height: 50px; width: 2px; border-right: 2px solid #ae967a;"></span>
+                                    <p class="mb-2 col">{{ Helpers::getJam($event->event_date_start) }} - {{ $event->event_date_end ?Helpers::getJam($event->event_date_end) :"Selesai"}} </p>
+                                </div>
+                                <p class="text-center">{{ $event->address }}</p>
                             </div>
-                            <p class="text-center">{{ $event->address }}</p>
                         </div>
                         @if($index == 0)
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126358.20770923386!2d113.303502!3d-8.233495!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd66391161e2759%3A0x1cc272bcf52a8d76!2sJl.%20Barat%20Stadion%20No.97%2C%20Jombang%2C%20Yosowilangun%20Lor%2C%20Kec.%20Yosowilangun%2C%20Kabupaten%20Lumajang%2C%20Jawa%20Timur%2067382!5e0!3m2!1sid!2sid!4v1741785520128!5m2!1sid!2sid" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <!-- <iframe
-                            src="{{$event->map_address}}"
-                            width="100%" height="100%" style="border: 0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe> -->
+                        <div class="col-12">
+                            <iframe src="{{ $event->map_address_preview }}" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                         @endif
-
+                        @endforeach
                     </div>
-                    @endforeach
                 </div>
 
                 <!-- <h1 class="great-vibes item-bottom text-primary">Denah Lokasi</h1>
