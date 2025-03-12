@@ -28,11 +28,11 @@
             padding-block: 4rem;
         }
 
-            {
+        .active {
             position: relative;
         }
 
-        ::after {
+        .active::after {
             content: "";
             width: 100%;
             height: 100%;
@@ -58,7 +58,7 @@
             position: absolute;
         }
 
-        .asset-left-top {
+        .active.asset-left-top {
             animation: leftTop 2s ease-out forwards;
 
         }
@@ -76,7 +76,7 @@
             }
         }
 
-        .asset-left-bottom {
+        .active.asset-left-bottom {
             animation: leftBottom 2s ease-out forwards;
             transform: rotate(180deg);
 
@@ -94,7 +94,7 @@
             }
         }
 
-        .asset-right-bottom {
+        .active.asset-right-bottom {
             transform: rotate(180deg);
             animation: rightBottom 2s ease-out forwards;
         }
@@ -111,7 +111,7 @@
             }
         }
 
-        .asset-right-top {
+        .active.asset-right-top {
             animation: rightTop 2s ease-out forwards;
 
         }
@@ -128,7 +128,7 @@
             }
         }
 
-        .asset-center-top {
+        .active.asset-center-top {
             animation: centerTop 2s ease-out forwards;
 
         }
@@ -143,7 +143,7 @@
             }
         }
 
-        .asset-center-bottom {
+        .active.asset-center-bottom {
             animation: centerBottom 2s ease-out forwards;
             transform: rotate(180deg);
 
@@ -180,11 +180,16 @@
 
         body {
             scroll-behavior: smooth;
-            height: 100vh;
-            overflow: auto;
-            scroll-snap-type: y mandatory;
+            /* overflow: auto; */
+            /* scroll-snap-type: y mandatory; */
         }
 
+        .scroll-container {
+            overflow: scroll;
+            scroll-snap-type: y mandatory;
+            height: 100vh;
+
+        }
 
         section {
             animation: showSection;
@@ -209,6 +214,8 @@
             transition: all .3s ease-out;
         }
 
+
+
         .nav-active {
             background-color: #ae967a;
             color: white !important;
@@ -227,9 +234,7 @@
         <section id="opening">
             <div class="container position-relative justify-content-center opening" style="background-image: url(assets/image/02/bg.png);background-position:center;background-size: cover;height: 100vh !important;">
 
-                <div class="position-relative text-center" style="z-index: 1;">
 
-                </div>
                 <div class="position-relative text-center" style="z-index: 1;">
 
                     <div class="item-top">
@@ -244,14 +249,13 @@
                 </div>
 
                 <img src="{{ asset("assets/image/02/pintu.png") }}" style="width: 80%;" class="position-absolute" alt="">
-                <img class="asset center asset-center-top" src="{{ asset("assets/image/02/center.png") }}" alt="">
-                <img class="asset center asset-center-bottom" src="{{ asset("assets/image/02/center.png") }}" alt="">
-                <img class="asset flower asset-left-top" src="{{ asset("assets/image/02/border.png") }}" alt="">
-                <img class="asset flower asset-right-bottom" src="{{ asset("assets/image/02/border.png") }}" alt="">
-                <img class="asset flower asset-right-top" src="{{ asset("assets/image/02/flower.png") }}" alt="">
-                <img class="asset flower asset-left-bottom" src="{{ asset("assets/image/02/flower.png") }}" alt="">
+                <img class="asset active center asset-center-top" src="{{ asset("assets/image/02/center.png") }}" alt="">
+                <img class="asset active center asset-center-bottom" src="{{ asset("assets/image/02/center.png") }}" alt="">
+                <img class="asset active flower asset-left-top" src="{{ asset("assets/image/02/border.png") }}" alt="">
+                <img class="asset active flower asset-right-bottom" src="{{ asset("assets/image/02/border.png") }}" alt="">
+                <img class="asset active flower asset-right-top" src="{{ asset("assets/image/02/flower.png") }}" alt="">
+                <img class="asset active flower asset-left-bottom" src="{{ asset("assets/image/02/flower.png") }}" alt="">
             </div>
-
         </section>
         <section id="home">
             <div class="container position-relative justify-content-center" style="background-image: url(assets/image/02/bg.png);background-position:center;background-size: cover;">
@@ -442,6 +446,7 @@
                 duration: duration,
                 easing: 'ease-out',
                 delay: 0,
+                container: ".scroll-container"
             };
             ScrollReveal().reveal(' .item-bottom', {
                 origin: 'bottom',
@@ -461,7 +466,9 @@
                 delay: 100,
                 easing: 'ease-out',
                 scale: 1,
-                viewFactor: 0.2
+                viewFactor: 0.2,
+                container: ".scroll-container"
+
             };
             ScrollReveal().reveal(' .item-left', {
                 origin: 'left',
@@ -481,6 +488,8 @@
                 delay: 100,
                 easing: 'ease-out',
                 scale: 1,
+                container: ".scroll-container"
+
             };
             ScrollReveal().reveal(' .item-bottom-bounce', {
                 origin: 'bottom',
@@ -495,6 +504,8 @@
                     duration: duration,
                     delay: index * 200,
                     reset: true,
+                    container: ".scroll-container"
+
                 });
             });
 
@@ -505,11 +516,30 @@
                 reset: true,
                 duration: duration,
                 delay: 100,
+                container: ".scroll-container"
+
             };
             ScrollReveal().reveal(' .item-zoom', {
                 origin: 'bottom',
                 ...optZoom
             });
+
+
+            ScrollReveal().reveal('.asset', {
+                easing: 'ease-out',
+                distance: "0",
+                reset: true,
+                duration: 1000,
+                opacity: "0",
+                container: ".scroll-container",
+                beforeReveal: function(el) {
+                    el.classList.add('active');
+                },
+                beforeReset: function(el) {
+                    el.classList.remove('active');
+                }
+            });
+
         }
     </script>
 
