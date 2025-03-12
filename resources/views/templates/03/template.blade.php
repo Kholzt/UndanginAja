@@ -185,7 +185,7 @@
         }
 
         .scroll-container {
-            overflow: scroll;
+            overflow-y: auto;
             scroll-snap-type: y mandatory;
             height: 100vh;
 
@@ -323,59 +323,61 @@
 
         </section>
         <section id="mempelai">
-            <div class="container position-relative" style="background-image: url(assets/image/02/bg.png);background-position:center;background-size: cover;">
+            <div class="container position-relative " style="background-image: url(assets/image/02/bg.png);background-position:center;background-size: cover;">
 
-                <img src="{{ asset("assets/image/02/bismillah.png") }}" class="item-top" style="width:45%" alt="">
-                <h2 style="font-size: 28px;" class="mb-0 mt-4 great-vibes text-primary item-top">Undangan Pernikahan</h2>
-                <center>
-                    <p class="mt-2 item-top" style="font-size: 12px;">
-                        Dengan memohon Rahmat dan Ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri pernikahan kami:
-                    </p>
-                </center>
-                <span class="great-vibes text-primary fs-1 mb-0 item-zoom">{{ $wedding_details->bride_name }}</span>
-                <p class="m-0" style="font-size: 12px;"> {{ $wedding_details->parent_bride }}</p>
-                <p class="fs-2 text-primary great-vibes m-0">&</p>
-                <span class="great-vibes text-primary fs-1 mb-0 item-zoom">{{ $wedding_details->groom_name }}</span>
-                <p style="font-size: 12px;"> {{ $wedding_details->parent_groom }}</p>
+                <div class="d-flex flex-column h-100 justify-content-center align-items-center">
+                    <img src="{{ asset("assets/image/02/bismillah.png") }}" class="item-top" style="width:45%" alt="">
+                    <h2 style="font-size: 28px;" class="mb-0 mt-4 great-vibes text-primary item-top">Undangan Pernikahan</h2>
+                    <center>
+                        <p class="mt-2 item-top" style="font-size: 12px;">
+                            Dengan memohon Rahmat dan Ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri pernikahan kami:
+                        </p>
+                    </center>
+                    <span class="great-vibes text-primary fs-1 mb-0 item-zoom">{{ $wedding_details->bride_name }}</span>
+                    <p class="m-0" style="font-size: 12px;"> {{ $wedding_details->parent_bride }}</p>
+                    <p class="fs-2 text-primary great-vibes m-0">&</p>
+                    <span class="great-vibes text-primary fs-1 mb-0 item-zoom">{{ $wedding_details->groom_name }}</span>
+                    <p style="font-size: 12px;"> {{ $wedding_details->parent_groom }}</p>
 
-                <div class="row mb-5 justify-content-center align-items-center g-4 position-relative w-100" style="z-index: 1;">
-                    <div class="col-sm-3 col-4">
-                        <div class="card item-bottom-stack  border-0 shadow-sm justify-content-center d-flex flex-column align-items-center " style="width: 90px;height: 90px;">
-                            <h2 class="mb-0" id="days">00</h2>
-                            <h6>Days</h6>
+                    <div class="row mb-5 justify-content-center align-items-center g-4 position-relative w-100" style="z-index: 1;">
+                        <div class="col-3">
+                            <div style="aspect-ratio: 1/1;" class="card item-bottom-stack  border-0 shadow-sm justify-content-center d-flex flex-column align-items-center h-100 w-100">
+                                <h2 style="font-size: 16px;" class="mb-0" id="days">00</h2>
+                                <small style="font-size: 12px;">Days</small>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div style="aspect-ratio: 1/1;" class="card item-bottom-stack border-0 shadow-sm justify-content-center d-flex flex-column align-items-center h-100 w-100">
+                                <h2 style="font-size: 16px;" class="mb-0" id="hours">00</h2>
+                                <small style="font-size: 12px;">Hours</small>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div style="aspect-ratio: 1/1;" class="card item-bottom-stack border-0 shadow-sm justify-content-center d-flex flex-column align-items-center h-100 w-100">
+                                <h2 style="font-size: 16px;" class="mb-0" id="minutes">00</h2>
+                                <small style="font-size: 12px;">Min</small>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div style="aspect-ratio: 1/1;" class="card item-bottom-stack border-0 shadow-sm justify-content-center d-flex flex-column align-items-center h-100 w-100">
+                                <h2 style="font-size: 16px;" class="mb-0" id="seconds">00</h2>
+                                <small style="font-size: 12px;">Sec</small>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-4">
-                        <div class="card item-bottom-stack border-0 shadow-sm justify-content-center d-flex flex-column align-items-center " style="width: 90px;height: 90px;">
-                            <h2 class="mb-0" id="hours">00</h2>
-                            <h6>Hours</h6>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-4">
-                        <div class="card item-bottom-stack border-0 shadow-sm justify-content-center d-flex flex-column align-items-center " style="width: 90px;height: 90px;">
-                            <h2 class="mb-0" id="minutes">00</h2>
-                            <h6>Min</h6>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-4">
-                        <div class="card item-bottom-stack border-0 shadow-sm justify-content-center d-flex flex-column align-items-center " style="width: 90px;height: 90px;">
-                            <h2 class="mb-0" id="seconds">00</h2>
-                            <h6>Sec</h6>
-                        </div>
-                    </div>
+                    <img class="asset center asset-center-top" src="{{ asset("assets/image/02/center.png") }}" alt="">
+                    <img class="asset center asset-center-bottom" src="{{ asset("assets/image/02/center.png") }}" alt="">
+                    <img class="asset flower asset-left-top" src="{{ asset("assets/image/02/border.png") }}" alt="">
+                    <img class="asset flower asset-right-bottom" src="{{ asset("assets/image/02/border.png") }}" alt="">
+                    <img class="asset flower asset-right-top" src="{{ asset("assets/image/02/flower.png") }}" alt="">
+                    <img class="asset flower asset-left-bottom" src="{{ asset("assets/image/02/flower.png") }}" alt="">
                 </div>
-                <img class="asset center asset-center-top" src="{{ asset("assets/image/02/center.png") }}" alt="">
-                <img class="asset center asset-center-bottom" src="{{ asset("assets/image/02/center.png") }}" alt="">
-                <img class="asset flower asset-left-top" src="{{ asset("assets/image/02/border.png") }}" alt="">
-                <img class="asset flower asset-right-bottom" src="{{ asset("assets/image/02/border.png") }}" alt="">
-                <img class="asset flower asset-right-top" src="{{ asset("assets/image/02/flower.png") }}" alt="">
-                <img class="asset flower asset-left-bottom" src="{{ asset("assets/image/02/flower.png") }}" alt="">
             </div>
         </section>
         <section id="acara">
             <div class="container position-relative" style="background-image: url(assets/image/02/bg.png);background-position:center;background-size: cover;">
                 <div class="row mb-4 w-100 justify-content-center align-items-center h-100">
-                    @foreach ($events as $event)
+                    @foreach ($events as $index => $event)
                     <div class="col-12">
                         <div
                             class=" item-bottom border-0    justify-content-center d-flex flex-column align-items-center">
@@ -387,6 +389,15 @@
                             </div>
                             <p class="text-center">{{ $event->address }}</p>
                         </div>
+                        @if($index == 0)
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126358.20770923386!2d113.303502!3d-8.233495!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd66391161e2759%3A0x1cc272bcf52a8d76!2sJl.%20Barat%20Stadion%20No.97%2C%20Jombang%2C%20Yosowilangun%20Lor%2C%20Kec.%20Yosowilangun%2C%20Kabupaten%20Lumajang%2C%20Jawa%20Timur%2067382!5e0!3m2!1sid!2sid!4v1741785520128!5m2!1sid!2sid" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!-- <iframe
+                            src="{{$event->map_address}}"
+                            width="100%" height="100%" style="border: 0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe> -->
+                        @endif
+
                     </div>
                     @endforeach
                 </div>

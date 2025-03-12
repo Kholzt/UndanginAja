@@ -34,8 +34,8 @@ class Helpers
     }
     static public function getJam($tanggal)
     {
-        $jam = date('H:i', timestamp: strtotime($tanggal));
-        return  $jam;
+        $jam = date('h:i A', strtotime($tanggal));
+        return $jam;
     }
 
     static public function getTanggal($tanggal)
