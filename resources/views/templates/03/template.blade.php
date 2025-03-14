@@ -390,20 +390,11 @@
                                 <p class="text-center">{{ $event->address }}</p>
                             </div>
                         </div>
-                        @if($index == 0)
-                        <div class="col-12">
-                            <iframe src="{{ $event->map_address_preview }}" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                        @endif
+
                         @endforeach
                     </div>
                 </div>
 
-                <!-- <h1 class="great-vibes item-bottom text-primary">Denah Lokasi</h1>
-            <a href="{{ $mainEvent->map_address }}"
-                class="btn btn-primary item-bottom-bounce rounded-pill mb-5 text-white px-4" target="_blank">
-                <i class="fa fa-map"></i> Lihat lokasi acara
-            </a> -->
 
                 <img class="asset center asset-center-top" src="{{ asset("assets/image/02/center.png") }}" alt="">
                 <img class="asset center asset-center-bottom" src="{{ asset("assets/image/02/center.png") }}" alt="">
@@ -413,8 +404,33 @@
                 <img class="asset flower asset-left-bottom" src="{{ asset("assets/image/02/flower.png") }}" alt="">
             </div>
         </section>
-    </div>
+        <section id="map">
+            <div class="container position-relative" style="background-image: url(assets/image/02/bg.png);background-position:center;background-size: cover;">
+                <div class="h-100 w-100 d-flex align-items-center flex-column justify-content-center">
+                    <h1 class="great-vibes item-bottom text-primary">Denah Lokasi</h1>
+                    <div style="border: 2px solid #ae967a;" class="rounded-2 p-2 item-zoom">
+                        <iframe class=" rounded-2 " src="{{ $mainEvent->map_address_preview }}" width="100%" height="200" style="border: 1px solid #ae967a;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <a href="{{ $mainEvent->map_address }}"
+                        class="mt-4 item-bottom rounded-pill mb-5 text-white px-4" target="_blank">
+                        <button id="open-letter" class="px-4 py-2 rounded text-white" style="background-color: #ae967a;border: none;outline: none;">Lihat lokasi acara</button>
+                    </a>
+                </div>
 
+
+
+
+
+                <img class="asset center asset-center-top" src="{{ asset("assets/image/02/center.png") }}" alt="">
+                <img class="asset center asset-center-bottom" src="{{ asset("assets/image/02/center.png") }}" alt="">
+                <img class="asset flower asset-left-top" src="{{ asset("assets/image/02/border.png") }}" alt="">
+                <img class="asset flower asset-right-bottom" src="{{ asset("assets/image/02/border.png") }}" alt="">
+                <img class="asset flower asset-right-top" src="{{ asset("assets/image/02/flower.png") }}" alt="">
+                <img class="asset flower asset-left-bottom" src="{{ asset("assets/image/02/flower.png") }}" alt="">
+            </div>
+        </section>
+
+    </div>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
