@@ -72,7 +72,7 @@ class InvitationsResource extends Resource
                                         DateTimePicker::make("event_date_start")
                                             ->required(),
                                         DateTimePicker::make("event_date_end")
-                                            ->required(),
+                                            ->nullable(),
                                         Textarea::make("address")
                                             ->placeholder("Jl di Ponogoro No 20, Bataan, Bondowoso, Jawa Timur")
                                             ->required()

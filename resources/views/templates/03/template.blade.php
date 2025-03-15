@@ -419,8 +419,6 @@
 
 
 
-
-
                 <img class="asset center asset-center-top" src="{{ asset("assets/image/02/center.png") }}" alt="">
                 <img class="asset center asset-center-bottom" src="{{ asset("assets/image/02/center.png") }}" alt="">
                 <img class="asset flower asset-left-top" src="{{ asset("assets/image/02/border.png") }}" alt="">
