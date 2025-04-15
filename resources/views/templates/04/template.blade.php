@@ -1543,7 +1543,8 @@
                             data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:400}"
                             data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h3 class="elementor-heading-title elementor-size-small">{{ ucfirst(explode(" ", $title)[0]) }}
+                                <h3 class="elementor-heading-title elementor-size-small">
+                                    {{ ucfirst(explode(" ", $title)[0]) }}
                                 </h3>
                             </div>
                         </div>
@@ -1560,7 +1561,8 @@
                             data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:400}"
                             data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h3 class="elementor-heading-title elementor-size-small">{{ ucfirst(explode(" ", $title)[2]) }}
+                                <h3 class="elementor-heading-title elementor-size-small">
+                                    {{ ucfirst(explode(" ", $title)[2]) }}
                                 </h3>
                             </div>
                         </div>
@@ -1579,7 +1581,9 @@
                             data-widget_type="heading.default">
                             <div class="elementor-widget-container">
                                 <h3 class="elementor-heading-title elementor-size-small">
-                                    Saturday, December 28<sup>th</sup> 2024</h3>
+                                    {{-- Saturday, December 28<sup>th</sup> 2024 --}}
+                                    {{ Helpers::getFormatTanggal($event->event_date_start) }}
+                                </h3>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-cd168a animated-slow elementor-widget elementor-widget-heading animated fadeIn"
@@ -1587,8 +1591,11 @@
                             data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:1100}"
                             data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h3 class="elementor-heading-title elementor-size-small">at The Westlake Resort
-                                    Yogyakarta</h3>
+                                <h3 class="elementor-heading-title elementor-size-small">at
+                                    {{$mainEvent->address}}
+                                    {{-- The Westlake Resort --}}
+                                    {{-- Yogyakarta --}}
+                                </h3>
                             </div>
                         </div>
                     </div>
@@ -1725,7 +1732,7 @@
                                             data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:500}"
                                             data-widget_type="text-editor.default">
                                             <div class="elementor-widget-container">
-                                                <p>Bapak Sastro Priyono<br>&amp; Ibu Hindri Laras</p>
+                                                {{-- <p>Bapak Sastro Priyono<br>&amp; Ibu Hindri Laras</p> --}}
                                             </div>
                                         </div>
                                     </div>
@@ -1814,7 +1821,7 @@
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
                                                 <h3 class="elementor-heading-title elementor-size-small">
-                                                    {{ $wedding_details->brade_name }}
+                                                    {{ $wedding_details->bride_name }}
                                                 </h3>
                                             </div>
                                         </div>
@@ -1824,7 +1831,7 @@
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
                                                 <h3 class="elementor-heading-title elementor-size-small">
-                                                    {{ $wedding_details->parent_brade }}
+                                                    {{ $wedding_details->parent_bride }}
                                                 </h3>
                                             </div>
                                         </div>
@@ -1833,7 +1840,8 @@
                                             data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:500}"
                                             data-widget_type="text-editor.default">
                                             <div class="elementor-widget-container">
-                                                <p>Bapak Djoko Sulistyo<br>&amp; Ibu Dyah Nugraheni Patriastuti</p>
+                                                {{-- <p>Bapak Djoko Sulistyo<br>&amp; Ibu Dyah Nugraheni Patriastuti</p>
+                                                --}}
                                             </div>
                                         </div>
                                     </div>
@@ -2169,7 +2177,8 @@
                                     وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</h3>
                             </div>
                         </div>
-                        <div class="elementor-element elementor-element-6c45aac2 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+                        {{-- <div
+                            class="elementor-element elementor-element-6c45aac2 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
                             data-id="6c45aac2" data-element_type="widget"
                             data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}"
                             data-widget_type="heading.default">
@@ -2186,7 +2195,7 @@
                                 <p>&amp;</p>
                                 <p>Keluarga Bapak Djoko Sulistyo<br>&amp; Ibu Dyah Nugraheni Patriastuti</p>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="elementor-element elementor-element-f3333be animated-slow elementor-invisible elementor-widget elementor-widget-heading"
                             data-id="f3333be" data-element_type="widget"
                             data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}"
@@ -2205,7 +2214,7 @@
                 </div>
             </div>
         </section>
-        <section
+        {{-- <section
             class="elementor-section elementor-top-section elementor-element elementor-element-626315d elementor-section-boxed elementor-section-height-default elementor-section-height-default"
             data-id="626315d" data-element_type="section"
             data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -2414,8 +2423,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section
+        </section> --}}
+        {{-- <section
             class="elementor-section elementor-top-section elementor-element elementor-element-e7ad8f7 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
             data-id="e7ad8f7" data-element_type="section"
             data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -2494,8 +2503,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section
+        </section> --}}
+        {{-- <section
             class="elementor-section elementor-top-section elementor-element elementor-element-2b7ce792 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
             data-id="2b7ce792" data-element_type="section"
             data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -2651,8 +2660,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section
+        </section> --}}
+        {{-- <section
             class="elementor-section elementor-top-section elementor-element elementor-element-c4c1577 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
             data-id="c4c1577" data-element_type="section"
             data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -2835,7 +2844,8 @@
 
 
                                             <div class="wdp-mempelai" style="width: auto !important;">
-                                                {{ ucfirst(explode(" ", $title)[0]) }} &amp; {{ ucfirst(explode(" ", $title)[2]) }}
+                                                {{ ucfirst(explode(" ", $title)[0]) }} &amp;
+                                                {{ ucfirst(explode(" ", $title)[2]) }}
                                             </div>
 
 
@@ -2987,7 +2997,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
     </div><iframe id="jam-iframe" src="{{asset('assets/themes/04')}}/iframe.html"></iframe>
     <div id="wpcp-error-message" class="msgmsg-box-wpcp hideme"><span>error: </span>Konten dilindungi.</div>
     <script>
