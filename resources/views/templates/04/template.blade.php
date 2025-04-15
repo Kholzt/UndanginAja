@@ -1706,7 +1706,7 @@
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
                                                 <h3 class="elementor-heading-title elementor-size-small">
-                                                    {{ $wedding_details->bride_name }}
+                                                    {{ $wedding_details->groom_name }}
                                                 </h3>
                                             </div>
                                         </div>
@@ -1716,7 +1716,7 @@
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
                                                 <h3 class="elementor-heading-title elementor-size-small">
-                                                    {{ $wedding_details->parent_bride }}
+                                                    {{ $wedding_details->parent_groom }}
                                                 </h3>
                                             </div>
                                         </div>
@@ -1804,7 +1804,8 @@
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
                                                 <h3 class="elementor-heading-title elementor-size-small">
-                                                    {{ explode(" ", $title)[2] }}</h3>
+                                                    {{ explode(" ", $title)[2] }}
+                                                </h3>
                                             </div>
                                         </div>
                                         <div class="elementor-element elementor-element-ca28a27 elementor-invisible elementor-widget elementor-widget-heading"
@@ -1813,7 +1814,7 @@
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
                                                 <h3 class="elementor-heading-title elementor-size-small">
-                                                    {{ $wedding_details->groom_name }}
+                                                    {{ $wedding_details->brade_name }}
                                                 </h3>
                                             </div>
                                         </div>
@@ -1823,7 +1824,7 @@
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
                                                 <h3 class="elementor-heading-title elementor-size-small">
-                                                    {{ $wedding_details->parent_groom }}
+                                                    {{ $wedding_details->parent_brade }}
                                                 </h3>
                                             </div>
                                         </div>
@@ -1904,7 +1905,87 @@
                                     pernikahan putra dan putri kami yang Insya Allah akan dilaksanakan pada:</h3>
                             </div>
                         </div>
-                        <section
+                        @foreach ($events as $index => $event)
+                            <section
+                                class="elementor-section elementor-inner-section elementor-element elementor-element-2f47d103 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                data-id="2f47d103" data-element_type="section">
+                                <div class="elementor-container elementor-column-gap-default">
+                                    <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1e651b3c elementor-invisible"
+                                        data-id="1e651b3c" data-element_type="column"
+                                        data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-2f190454 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+                                                data-id="2f190454" data-element_type="widget"
+                                                data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}"
+                                                data-widget_type="heading.default">
+                                                <div class="elementor-widget-container">
+                                                    <h3 class="elementor-heading-title elementor-size-small">
+                                                        {{ $event->title }}
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-element elementor-element-934e021 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+                                                data-id="934e021" data-element_type="widget"
+                                                data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}"
+                                                data-widget_type="heading.default">
+                                                <div class="elementor-widget-container">
+                                                    <h3 class="elementor-heading-title elementor-size-small">
+                                                        {{ Helpers::getFormatTanggal($event->event_date_start) }}
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-36c19452 elementor-invisible"
+                                        data-id="36c19452" data-element_type="column"
+                                        data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-6f5d9d8a animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+                                                data-id="6f5d9d8a" data-element_type="widget"
+                                                data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}"
+                                                data-widget_type="heading.default">
+                                                <div class="elementor-widget-container">
+                                                    <h3 class="elementor-heading-title elementor-size-small">Bertempat di
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-element elementor-element-46f68ad2 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+                                                data-id="46f68ad2" data-element_type="widget"
+                                                data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}"
+                                                data-widget_type="heading.default">
+                                                <div class="elementor-widget-container">
+                                                    <h3 class="elementor-heading-title elementor-size-small">
+                                                        {{ $event->address }}
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            @if($mainEvent->id == $event->id)
+                                                <div class="elementor-element elementor-element-b596fbe elementor-align-justify animated-slow elementor-tablet-align-justify elementor-mobile-align-justify elementor-invisible elementor-widget elementor-widget-button"
+                                                    data-id="b596fbe" data-element_type="widget"
+                                                    data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:0}"
+                                                    data-widget_type="button.default">
+                                                    <div class="elementor-widget-container">
+                                                        <div class="elementor-button-wrapper">
+                                                            <a class="elementor-button elementor-button-link elementor-size-sm"
+                                                                href="{{ $mainEvent->map_address }}" target="_blank">
+                                                                <span class="elementor-button-content-wrapper">
+                                                                    <span
+                                                                        class="elementor-button-icon elementor-align-icon-left">
+                                                                        <i aria-hidden="true" class="far fa-map"></i> </span>
+                                                                    <span class="elementor-button-text">Google Maps</span>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            @endif
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        @endforeach
+
+                        {{-- <section
                             class="elementor-section elementor-inner-section elementor-element elementor-element-2f47d103 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                             data-id="2f47d103" data-element_type="section">
                             <div class="elementor-container elementor-column-gap-default">
@@ -2059,7 +2140,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>
+                        </section> --}}
                         <div class="elementor-element elementor-element-629cfb72 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
                             data-id="629cfb72" data-element_type="widget"
                             data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}"
@@ -2753,7 +2834,8 @@
 
 
 
-                                            <div class="wdp-mempelai" style="width: auto !important;">Faiz &amp; Alin
+                                            <div class="wdp-mempelai" style="width: auto !important;">
+                                                {{ explode(" ", $title)[0] }} &amp; {{ explode(" ", $title)[2] }}
                                             </div>
 
 
