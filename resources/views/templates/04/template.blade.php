@@ -1582,7 +1582,7 @@
                             <div class="elementor-widget-container">
                                 <h3 class="elementor-heading-title elementor-size-small">
                                     {{-- Saturday, December 28<sup>th</sup> 2024 --}}
-                                    {{ Helpers::getFormatTanggal($event->event_date_start) }}
+                                    {{ Helpers::getFormatTanggal($mainEvent->event_date_start) }}
                                 </h3>
                             </div>
                         </div>
