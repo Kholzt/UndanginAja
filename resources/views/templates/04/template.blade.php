@@ -2709,8 +2709,7 @@
                                 </div>
                             </div>
                         </section> --}}
-                        {{-- <div
-                            class="elementor-element elementor-element-25f38924 elementor-view-default elementor-widget elementor-widget-weddingpress-audio"
+                        <div class="elementor-element elementor-element-25f38924 elementor-view-default elementor-widget elementor-widget-weddingpress-audio"
                             data-id="25f38924" data-element_type="widget" data-widget_type="weddingpress-audio.default">
                             <div class="elementor-widget-container">
                                 <script>
@@ -2802,7 +2801,7 @@
                                 </div>
 
                             </div>
-                        </div> --}}
+                        </div>
                         {{-- <div
                             class="elementor-element elementor-element-574831e8 elementor-widget elementor-widget-heading"
                             data-id="574831e8" data-element_type="widget" data-widget_type="heading.default">
