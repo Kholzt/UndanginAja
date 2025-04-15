@@ -1543,7 +1543,7 @@
                             data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:400}"
                             data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h3 class="elementor-heading-title elementor-size-small">{{ explode(" ", $title)[0] }}
+                                <h3 class="elementor-heading-title elementor-size-small">{{ ucfirst(explode(" ", $title)[0]) }}
                                 </h3>
                             </div>
                         </div>
@@ -1560,7 +1560,7 @@
                             data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:400}"
                             data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h3 class="elementor-heading-title elementor-size-small">{{ explode(" ", $title)[2] }}
+                                <h3 class="elementor-heading-title elementor-size-small">{{ ucfirst(explode(" ", $title)[2]) }}
                                 </h3>
                             </div>
                         </div>
@@ -1611,8 +1611,8 @@
                             data-widget_type="heading.default">
                             <div class="elementor-widget-container">
                                 <h3 class="elementor-heading-title elementor-size-small">Meet
-                                    <i>{{ explode(" ", $title)[2] }}</i> and
-                                    <i>{{ explode(" ", $title)[0] }}</i>
+                                    <i>{{ ucfirst(explode(" ", $title)[2]) }}</i> and
+                                    <i>{{ ucfirst(explode(" ", $title)[0]) }}</i>
                                 </h3>
                             </div>
                         </div>
@@ -1696,7 +1696,7 @@
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
                                                 <h3 class="elementor-heading-title elementor-size-small">
-                                                    {{ explode(" ", $title)[0] }}
+                                                    {{ ucfirst(explode(" ", $title)[0]) }}
                                                 </h3>
                                             </div>
                                         </div>
@@ -1804,7 +1804,7 @@
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
                                                 <h3 class="elementor-heading-title elementor-size-small">
-                                                    {{ explode(" ", $title)[2] }}
+                                                    {{ ucfirst(explode(" ", $title)[2]) }}
                                                 </h3>
                                             </div>
                                         </div>
@@ -2835,7 +2835,7 @@
 
 
                                             <div class="wdp-mempelai" style="width: auto !important;">
-                                                {{ explode(" ", $title)[0] }} &amp; {{ explode(" ", $title)[2] }}
+                                                {{ ucfirst(explode(" ", $title)[0]) }} &amp; {{ ucfirst(explode(" ", $title)[2]) }}
                                             </div>
 
 
