@@ -1182,11 +1182,11 @@
                     key = e.which;     //firefox (97)
                 //if (key != 17) alert(key);
                 if (elemtype != 'TEXT' && (key == 97 || key == 65 || key == 67 || key == 99 || key == 88 || key == 120 || key == 26 || key == 85 || key == 86 || key == 83 || key == 43 || key == 73)) {
-                    if (wccp_free_iscontenteditable(e)) return true;
-                    show_wpcp_message('You are not allowed to copy content or view source');
-                    return false;
+                    // if (wccp_free_iscontenteditable(e)) return true;
+                    // show_wpcp_message('You are not allowed to copy content or view source');
+                    // return false;
                 } else
-                    return true;
+                    // return true;
             }
         }
 
@@ -2329,8 +2329,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section
+        </section> --}}
+        {{-- <section
             class="elementor-section elementor-top-section elementor-element elementor-element-4fa2723 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
             data-id="4fa2723" data-element_type="section"
             data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -2661,7 +2661,7 @@
                 </div>
             </div>
         </section> --}}
-        {{-- <section
+        <section
             class="elementor-section elementor-top-section elementor-element elementor-element-c4c1577 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
             data-id="c4c1577" data-element_type="section"
             data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -2669,7 +2669,7 @@
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1c86fc03"
                     data-id="1c86fc03" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <section
+                        {{-- <section
                             class="elementor-section elementor-inner-section elementor-element elementor-element-e357cfd elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                             data-id="e357cfd" data-element_type="section">
                             <div class="elementor-container elementor-column-gap-default">
@@ -2708,8 +2708,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>
-                        <div class="elementor-element elementor-element-25f38924 elementor-view-default elementor-widget elementor-widget-weddingpress-audio"
+                        </section> --}}
+                        {{-- <div
+                            class="elementor-element elementor-element-25f38924 elementor-view-default elementor-widget elementor-widget-weddingpress-audio"
                             data-id="25f38924" data-element_type="widget" data-widget_type="weddingpress-audio.default">
                             <div class="elementor-widget-container">
                                 <script>
@@ -2801,8 +2802,9 @@
                                 </div>
 
                             </div>
-                        </div>
-                        <div class="elementor-element elementor-element-574831e8 elementor-widget elementor-widget-heading"
+                        </div> --}}
+                        {{-- <div
+                            class="elementor-element elementor-element-574831e8 elementor-widget elementor-widget-heading"
                             data-id="574831e8" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
                                 <h3 class="elementor-heading-title elementor-size-small"><a
@@ -2815,7 +2817,7 @@
                                 <h3 class="elementor-heading-title elementor-size-small"><a
                                         href="https://acarakami.com/">Jasa Undangan Online</a></h3>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="elementor-element elementor-element-5e22adf elementor-widget elementor-widget-weddingpress-wellcome"
                             data-id="5e22adf" data-element_type="widget"
                             data-widget_type="weddingpress-wellcome.default">
@@ -2997,8 +2999,9 @@
                     </div>
                 </div>
             </div>
-        </section> --}}
-    </div><iframe id="jam-iframe" src="{{asset('assets/themes/04')}}/iframe.html"></iframe>
+        </section>
+    </div>
+    {{-- <iframe id="jam-iframe" src="{{asset('assets/themes/04')}}/iframe.html"></iframe> --}}
     <div id="wpcp-error-message" class="msgmsg-box-wpcp hideme"><span>error: </span>Konten dilindungi.</div>
     <script>
         var timeout_result;
@@ -3016,7 +3019,7 @@
         }
     </script>
     <style>
-        @media print {
+        /* @media print {
             body * {
                 display: none !important;
             }
@@ -3024,7 +3027,7 @@
             body:after {
                 content: "Acarakami.com - Jasa Undangan Online No #1 di Bali";
             }
-        }
+        } */
     </style>
     <style type="text/css">
         #wpcp-error-message {
