@@ -1600,9 +1600,24 @@
                             <div class="elementor-widget-container">
                                 <h3 class="elementor-heading-title elementor-size-small">at
                                     {{$mainEvent->address}}
-                                    {{-- The Westlake Resort --}}
-                                    {{-- Yogyakarta --}}
                                 </h3>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-cd168a animated-slow elementor-widget elementor-widget-heading animated fadeIn"
+                            data-id="cd168a" data-element_type="widget"
+                            data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:1100}"
+                            data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                            <div style="display:flex;gap:10px;">
+        <span id="days" class="elementor-heading-title elementor-size-small">10 Day,</span>
+        <span id="hours" class="elementor-heading-title elementor-size-small">20 Hour</span>
+        <span id="minutes" class="elementor-heading-title elementor-size-small">20 Minute</span>
+        <span id="seconds" class="elementor-heading-title elementor-size-small">20 Second
+        </span>
+        
+        
+        
+    </div>
                             </div>
                         </div>
                     </div>
@@ -3159,7 +3174,37 @@
         /* ]]> */
     </script>
 
+<script>
+        // Timeout schedule
+        // Set target date
+        const targetDate = new Date('{{ $mainEvent->event_date_end }}').getTime();
 
+        // Update countdown every second
+        const countdownInterval = setInterval(() => {
+            const now = new Date().getTime();
+            const timeRemaining = targetDate - now;
+
+            if (timeRemaining > 0) {
+                const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+                // Update HTML elements
+                document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            } else {
+                // Clear the interval and display a message or perform an action
+                clearInterval(countdownInterval);
+                document.getElementById('days').textContent = '00';
+                document.getElementById('hours').textContent = '00';
+                document.getElementById('minutes').textContent = '00';
+                document.getElementById('seconds').textContent = '00';
+            }
+        }, 1000);
+    </script>
 
 
     <div id="scan-translator"><template shadowrootmode="closed">
