@@ -1609,10 +1609,10 @@
                             data-widget_type="heading.default">
                             <div class="elementor-widget-container">
                             <div style="display:flex;gap:10px;">
-        <span id="days" class="elementor-heading-title elementor-size-small">10 Day,</span>
-        <span id="hours" class="elementor-heading-title elementor-size-small">20 Hour</span>
-        <span id="minutes" class="elementor-heading-title elementor-size-small">20 Minute</span>
-        <span id="seconds" class="elementor-heading-title elementor-size-small">20 Second
+        <span id="days" class="elementor-heading-title elementor-size-small" style="font-size:20px">10 Day,</span>
+        <span id="hours" class="elementor-heading-title elementor-size-small" style="font-size:20px">20 Hour</span>
+        <span id="minutes" class="elementor-heading-title elementor-size-small" style="font-size:20px">20 Minute</span>
+        <span id="seconds" class="elementor-heading-title elementor-size-small" style="font-size:20px">20 Second
         </span>
         
         
@@ -1699,16 +1699,7 @@
                     data-id="1e17eaa" data-element_type="column"
                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-66ba3c3 elementor-hidden-mobile elementor-widget elementor-widget-image"
-                            data-id="66ba3c3" data-element_type="widget" data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img decoding="async" width="500" height="750"
-                                    src="{{asset('assets/themes/04')}}/8NIO9044.jpg"
-                                    class="attachment-medium_large size-medium_large wp-image-43376" alt=""
-                                    srcset="https://acarakami.com/wp-content/uploads/2024/12/8NIO9044.jpg 500w, https://acarakami.com/wp-content/uploads/2024/12/8NIO9044-200x300.jpg 200w"
-                                    sizes="(max-width: 500px) 100vw, 500px">
-                            </div>
-                        </div>
+                       
                         <section
                             class="elementor-section elementor-inner-section elementor-element elementor-element-b9025fc elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                             data-id="b9025fc" data-element_type="section"
@@ -1770,16 +1761,7 @@
                     data-id="b9f583c" data-element_type="column"
                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-8cc2323 elementor-hidden-mobile elementor-widget elementor-widget-image"
-                            data-id="8cc2323" data-element_type="widget" data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img decoding="async" width="500" height="750"
-                                    src="{{asset('assets/themes/04')}}/8NIO9029.jpg"
-                                    class="attachment-medium_large size-medium_large wp-image-43377" alt=""
-                                    srcset="https://acarakami.com/wp-content/uploads/2024/12/8NIO9029.jpg 500w, https://acarakami.com/wp-content/uploads/2024/12/8NIO9029-200x300.jpg 200w"
-                                    sizes="(max-width: 500px) 100vw, 500px">
-                            </div>
-                        </div>
+                    
                         <section
                             class="elementor-section elementor-inner-section elementor-element elementor-element-482bc7d elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                             data-id="482bc7d" data-element_type="section">
