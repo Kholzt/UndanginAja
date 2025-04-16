@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.cdnfonts.com/css/rantai-signature" rel="stylesheet">
+
     <style type="text/css" id="cst_font_data">
         @font-face {
             font-family: 'CVR';
@@ -65,7 +67,10 @@
             font-weight: 400;
             font-display: auto;
             font-fallback: HScpt;
-            src: url('https://acarakami.com/wp-content/uploads/2023/01/Haigrast.ttf') format('truetype');
+            /* src: url('https://acarakami.com/wp-content/uploads/2023/01/Haigrast.ttf') format('truetype'); */
+            src: url('https://fonts.cdnfonts.com/s/82457/RantaiSignature-51vK8.woff') format('woff');
+
+            
         }
 
         @font-face {
