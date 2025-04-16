@@ -1619,7 +1619,7 @@
 <span id="minutes"  style="font-size:20px">20 </span> Minute,
 </div>
 <div class="elementor-heading-title elementor-size-small">
-<span id="seconds"  style="font-size:20px">20 </span>Second
+<span id="seconds"  style="font-size:20px">20 </span> Second
 </div>
         
         
