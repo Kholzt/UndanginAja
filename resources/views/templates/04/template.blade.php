@@ -67,8 +67,8 @@
             font-weight: 400;
             font-display: auto;
             font-fallback: HScpt;
-            /* src: url('https://acarakami.com/wp-content/uploads/2023/01/Haigrast.ttf') format('truetype'); */
-            src: url('https://fonts.cdnfonts.com/s/82457/RantaiSignature-51vK8.woff') format('woff');
+            src: url('font/Haigrast.ttf') format('truetype');
+            /* src: url('https://fonts.cdnfonts.com/s/82457/RantaiSignature-51vK8.woff') format('woff'); */
 
             
         }
