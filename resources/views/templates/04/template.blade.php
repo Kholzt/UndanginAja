@@ -1730,7 +1730,7 @@
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
                                                 <h3 class="elementor-heading-title elementor-size-small">
-                                                    {{ $wedding_details->parent_groom }}
+                                                    {{ explode(['bapak','Bapak'],$wedding_details->parent_groom )[0]}}
                                                 </h3>
                                             </div>
                                         </div>
@@ -1739,7 +1739,8 @@
                                             data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:500}"
                                             data-widget_type="text-editor.default">
                                             <div class="elementor-widget-container">
-                                                {{-- <p>Bapak Sastro Priyono<br>&amp; Ibu Hindri Laras</p> --}}
+                                           Bapak {{ explode(['bapak','Bapak'],$wedding_details->parent_groom )[1]}}
+
                                             </div>
                                         </div>
                                     </div>
@@ -1838,7 +1839,8 @@
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
                                                 <h3 class="elementor-heading-title elementor-size-small">
-                                                    {{ $wedding_details->parent_bride }}
+                                                    {{ explode(['bapak','Bapak'],$wedding_details->parent_bride )[0]}}
+
                                                 </h3>
                                             </div>
                                         </div>
@@ -1847,8 +1849,8 @@
                                             data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:500}"
                                             data-widget_type="text-editor.default">
                                             <div class="elementor-widget-container">
-                                                {{-- <p>Bapak Djoko Sulistyo<br>&amp; Ibu Dyah Nugraheni Patriastuti</p>
-                                                --}}
+                                           Bapak {{ explode(['bapak','Bapak'],$wedding_details->parent_bride )[1]}}
+
                                             </div>
                                         </div>
                                     </div>
