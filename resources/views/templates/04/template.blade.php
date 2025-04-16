@@ -1609,12 +1609,12 @@
                             data-widget_type="heading.default">
                             <div class="elementor-widget-container">
                             <div style="display:flex;gap:10px;">
-        <span id="days" class="elementor-heading-title elementor-size-small">10 Day,</span>
-        <span id="hours" class="elementor-heading-title elementor-size-small">20 Hour</span>
-        <span id="minutes" class="elementor-heading-title elementor-size-small">20 Minute</span>
-        <span id="seconds" class="elementor-heading-title elementor-size-small">20 Second
+        <span id="days" class="elementor-heading-title elementor-size-small">10</span>Day,
+        <span id="hours" class="elementor-heading-title elementor-size-small">20 </span>Hour,
+        <span id="minutes" class="elementor-heading-title elementor-size-small">20 </span>Minute,
+        <span id="seconds" class="elementor-heading-title elementor-size-small">20 
         </span>
-        
+        Second
         
         
     </div>
