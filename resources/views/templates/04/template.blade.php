@@ -1609,12 +1609,12 @@
                             data-widget_type="heading.default">
                             <div class="elementor-widget-container">
                             <div style="display:flex;gap:10px;">
-        <span id="days" class="elementor-heading-title elementor-size-small">10</span>Day,
-        <span id="hours" class="elementor-heading-title elementor-size-small">20 </span>Hour,
-        <span id="minutes" class="elementor-heading-title elementor-size-small">20 </span>Minute,
-        <span id="seconds" class="elementor-heading-title elementor-size-small">20 
+        <span id="days" class="elementor-heading-title elementor-size-small">10 Day,</span>
+        <span id="hours" class="elementor-heading-title elementor-size-small">20 Hour</span>
+        <span id="minutes" class="elementor-heading-title elementor-size-small">20 Minute</span>
+        <span id="seconds" class="elementor-heading-title elementor-size-small">20 Second
         </span>
-        Second
+        
         
         
     </div>
@@ -3191,17 +3191,17 @@
                 const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
                 // Update HTML elements
-                document.getElementById('days').textContent = days.toString().padStart(2, '0');
-                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+                document.getElementById('days').textContent = days.toString().padStart(2, '0') + " Day,";
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0') + " Hour,";
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0') + " Minute,";
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0')+ " Second";
             } else {
                 // Clear the interval and display a message or perform an action
                 clearInterval(countdownInterval);
-                document.getElementById('days').textContent = '00';
-                document.getElementById('hours').textContent = '00';
-                document.getElementById('minutes').textContent = '00';
-                document.getElementById('seconds').textContent = '00';
+                document.getElementById('days').textContent = '00 Day,';
+                document.getElementById('hours').textContent = '00 Hour,';
+                document.getElementById('minutes').textContent = '00 Minute';
+                document.getElementById('seconds').textContent = '00 Second';
             }
         }, 1000);
     </script>
