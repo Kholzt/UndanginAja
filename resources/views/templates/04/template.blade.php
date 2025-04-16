@@ -1610,13 +1610,13 @@
                             <div class="elementor-widget-container">
                             <div style="display:flex;gap:10px;">
                             <div class="elementor-heading-title elementor-size-small">
-<span id="days"  style="font-size:20px">10 </span>Day,
+<span id="days"  style="font-size:20px">10 </span> Day,
 </div>
 <div class="elementor-heading-title elementor-size-small">
-<span id="hours"  style="font-size:20px">20 </span>Hour
+<span id="hours"  style="font-size:20px">20 </span> Hour,
 </div>
 <div class="elementor-heading-title elementor-size-small">
-<span id="minutes"  style="font-size:20px">20 </span>Minute
+<span id="minutes"  style="font-size:20px">20 </span> Minute,
 </div>
 <div class="elementor-heading-title elementor-size-small">
 <span id="seconds"  style="font-size:20px">20 </span>Second
