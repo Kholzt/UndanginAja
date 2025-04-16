@@ -1730,7 +1730,8 @@
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
                                                 <h3 class="elementor-heading-title elementor-size-small">
-                                                    {{ explode(['bapak','Bapak'],$wedding_details->parent_groom )[0]}}
+                                                {{ preg_split('/\s*bapak\s*/i', $wedding_details->parent_groom)[0] }}
+
                                                 </h3>
                                             </div>
                                         </div>
@@ -1739,7 +1740,8 @@
                                             data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:500}"
                                             data-widget_type="text-editor.default">
                                             <div class="elementor-widget-container">
-                                           Bapak {{ explode(['bapak','Bapak'],$wedding_details->parent_groom )[1]}}
+                                           Bapak {{ preg_split('/\s*bapak\s*/i', $wedding_details->parent_groom)[0] }}
+
 
                                             </div>
                                         </div>
@@ -1839,7 +1841,8 @@
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
                                                 <h3 class="elementor-heading-title elementor-size-small">
-                                                    {{ explode(['bapak','Bapak'],$wedding_details->parent_bride )[0]}}
+                                                    
+                                                    {{ preg_split('/\s*bapak\s*/i', $wedding_details->parent_bride)[1] }}
 
                                                 </h3>
                                             </div>
@@ -1849,7 +1852,8 @@
                                             data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:500}"
                                             data-widget_type="text-editor.default">
                                             <div class="elementor-widget-container">
-                                           Bapak {{ explode(['bapak','Bapak'],$wedding_details->parent_bride )[1]}}
+                                           Bapak {{ preg_split('/\s*bapak\s*/i', $wedding_details->parent_bride)[1] }}
+
 
                                             </div>
                                         </div>
