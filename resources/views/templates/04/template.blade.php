@@ -2237,7 +2237,8 @@
                                             data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:300}"
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
-                                                <h3 class="elementor-heading-title elementor-size-small">Gallery</h3>
+                                                <h3 class="elementor-heading-title elementor-size-small"
+                                                    style="text-align: center;">Gallery</h3>
                                             </div>
                                         </div>
                                         <div class="elementor-element elementor-element-dcc587b animated-slow elementor-invisible elementor-widget elementor-widget-heading"
