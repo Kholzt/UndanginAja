@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://fonts.cdnfonts.com/css/rantai-signature" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/rantai-signature" rel="stylesheet">
 
     <style type="text/css" id="cst_font_data">
         @font-face {
@@ -70,7 +70,7 @@
             src: url('font/Haigrast.ttf') format('truetype');
             /* src: url('https://fonts.cdnfonts.com/s/82457/RantaiSignature-51vK8.woff') format('woff'); */
 
-            
+
         }
 
         @font-face {
@@ -1608,23 +1608,23 @@
                             data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:1100}"
                             data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                            <div style="display:flex;gap:10px;">
-                            <div class="elementor-heading-title elementor-size-small">
-<span id="days"  style="font-size:20px">10 </span> Day,
-</div>
-<div class="elementor-heading-title elementor-size-small">
-<span id="hours"  style="font-size:20px">20 </span> Hour,
-</div>
-<div class="elementor-heading-title elementor-size-small">
-<span id="minutes"  style="font-size:20px">20 </span> Minute,
-</div>
-<div class="elementor-heading-title elementor-size-small">
-<span id="seconds"  style="font-size:20px">20 </span> Second
-</div>
-        
-        
-        
-    </div>
+                                <div style="display:flex;gap:10px;">
+                                    <div class="elementor-heading-title elementor-size-small">
+                                        <span id="days" style="font-size:20px">10 </span> Day,
+                                    </div>
+                                    <div class="elementor-heading-title elementor-size-small">
+                                        <span id="hours" style="font-size:20px">20 </span> Hour,
+                                    </div>
+                                    <div class="elementor-heading-title elementor-size-small">
+                                        <span id="minutes" style="font-size:20px">20 </span> Minute,
+                                    </div>
+                                    <div class="elementor-heading-title elementor-size-small">
+                                        <span id="seconds" style="font-size:20px">20 </span> Second
+                                    </div>
+
+
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1657,9 +1657,9 @@
                             <div class="elementor-widget-container">
                                 <img fetchpriority="high" decoding="async" width="640" height="960"
                                     src="{{asset('assets/themes/04')}}/8NIO8826-768x1152.jpg"
-                                    class="attachment-medium_large size-medium_large wp-image-43402" alt=""
+                                    class="attachment-medium_large size-medium_large wp-image-43402" alt="" {{--
                                     srcset="https://acarakami.com/wp-content/uploads/2024/12/8NIO8826-768x1152.jpg 768w, https://acarakami.com/wp-content/uploads/2024/12/8NIO8826-200x300.jpg 200w, https://acarakami.com/wp-content/uploads/2024/12/8NIO8826-683x1024.jpg 683w, https://acarakami.com/wp-content/uploads/2024/12/8NIO8826.jpg 867w"
-                                    sizes="(max-width: 640px) 100vw, 640px">
+                                    --}} sizes="(max-width: 640px) 100vw, 640px">
                             </div>
                         </div>
                     </div>
@@ -1706,7 +1706,7 @@
                     data-id="1e17eaa" data-element_type="column"
                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
                     <div class="elementor-widget-wrap elementor-element-populated">
-                       
+
                         <section
                             class="elementor-section elementor-inner-section elementor-element elementor-element-b9025fc elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                             data-id="b9025fc" data-element_type="section"
@@ -1743,7 +1743,7 @@
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
                                                 <h3 class="elementor-heading-title elementor-size-small">
-                                                {{ preg_split('/\s*bapak\s*/i', $wedding_details->parent_groom)[0] }}
+                                                    {{ preg_split('/\s*bapak\s*/i', $wedding_details->parent_groom)[0] }}
 
                                                 </h3>
                                             </div>
@@ -1753,7 +1753,8 @@
                                             data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:500}"
                                             data-widget_type="text-editor.default">
                                             <div class="elementor-widget-container">
-                                           Bapak {{ preg_split('/\s*bapak\s*/i', $wedding_details->parent_groom)[1] }}
+                                                Bapak
+                                                {{ preg_split('/\s*bapak\s*/i', $wedding_details->parent_groom)[1] }}
 
 
                                             </div>
@@ -1768,8 +1769,8 @@
                     data-id="b9f583c" data-element_type="column"
                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
                     <div class="elementor-widget-wrap elementor-element-populated">
-                    
-                        <section
+
+                        {{-- <section
                             class="elementor-section elementor-inner-section elementor-element elementor-element-482bc7d elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                             data-id="482bc7d" data-element_type="section">
                             <div class="elementor-container elementor-column-gap-default">
@@ -1781,7 +1782,7 @@
                                             data-widget_type="image.default">
                                             <div class="elementor-widget-container">
                                                 <img decoding="async" width="500" height="750"
-                                                    src="{{asset('assets/themes/04')}}/8NIO9044.jpg"
+                                                    src="{{asset('assets/themes/04')}}/8NIO8826-768x1152.jpg"
                                                     class="attachment-medium_large size-medium_large wp-image-43376"
                                                     alt=""
                                                     srcset="https://acarakami.com/wp-content/uploads/2024/12/8NIO9044.jpg 500w, https://acarakami.com/wp-content/uploads/2024/12/8NIO9044-200x300.jpg 200w"
@@ -1798,7 +1799,7 @@
                                             data-widget_type="image.default">
                                             <div class="elementor-widget-container">
                                                 <img decoding="async" width="500" height="750"
-                                                    src="{{asset('assets/themes/04')}}/8NIO9029.jpg"
+                                                    src="{{asset('assets/themes/04')}}/8NIO8826-768x1152.jpg"
                                                     class="attachment-medium_large size-medium_large wp-image-43377"
                                                     alt=""
                                                     srcset="https://acarakami.com/wp-content/uploads/2024/12/8NIO9029.jpg 500w, https://acarakami.com/wp-content/uploads/2024/12/8NIO9029-200x300.jpg 200w"
@@ -1808,7 +1809,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>
+                        </section> --}}
                         <section
                             class="elementor-section elementor-inner-section elementor-element elementor-element-14d7969 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                             data-id="14d7969" data-element_type="section"
@@ -1845,7 +1846,7 @@
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
                                                 <h3 class="elementor-heading-title elementor-size-small">
-                                                    
+
                                                     {{ preg_split('/\s*bapak\s*/i', $wedding_details->parent_bride)[0] }}
 
                                                 </h3>
@@ -1856,7 +1857,8 @@
                                             data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:500}"
                                             data-widget_type="text-editor.default">
                                             <div class="elementor-widget-container">
-                                           Bapak {{ preg_split('/\s*bapak\s*/i', $wedding_details->parent_bride)[1] }}
+                                                Bapak
+                                                {{ preg_split('/\s*bapak\s*/i', $wedding_details->parent_bride)[1] }}
 
 
                                             </div>
@@ -2843,8 +2845,8 @@
                                     data-sampul="https://acarakami.com/wp-content/uploads/2022/12/prada-paper.jpg"
                                     style="background-image: url(&quot;https://acarakami.com/wp-content/uploads/2022/12/prada-paper.jpg&quot;);">
 
-                                    <div class="overlayy"></div>
-                                    <div class="content-modalx">
+                                    <div class="overlay"></div>
+                                    <div class="content-modalx" style="background-color: white !important">
                                         <div class="info_modalx">
 
                                             <div class="elementor-image img"><img decoding="async"
@@ -2974,7 +2976,6 @@
                                     //*Script Smart Audio Control by WeddingPress
 
                                     const audioElement = document.getElementById("song");
-
                                     document.addEventListener("visibilitychange", () => {
                                         if (document.visibilityState === "hidden") {
                                             if (audioElement && !audioElement.paused) {
@@ -3163,7 +3164,7 @@
         /* ]]> */
     </script>
 
-<script>
+    <script>
         // Timeout schedule
         // Set target date
         const targetDate = new Date('{{ $mainEvent->event_date_end }}').getTime();
@@ -3180,9 +3181,9 @@
                 const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
                 // Update HTML elements
-                document.getElementById('days').textContent = days.toString().padStart(2, '0') ;
-                document.getElementById('hours').textContent = hours.toString().padStart(2, '0') ;
-                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0') ;
+                document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
                 document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
             } else {
                 // Clear the interval and display a message or perform an action
