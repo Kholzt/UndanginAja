@@ -2276,7 +2276,7 @@
 
                                                             @media (max-width: 1024px) {
                                                                 .gallery .item {
-                                                                    width: calc(100% / 2);
+                                                                    width: calc(100% / 2 - 10px);
                                                                 }
                                                             }
 
