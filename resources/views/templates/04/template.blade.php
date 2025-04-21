@@ -2846,7 +2846,7 @@
                                     style="background-image: url(&quot;https://acarakami.com/wp-content/uploads/2022/12/prada-paper.jpg&quot;);">
 
                                     <div class="overlay"></div>
-                                    <div class="content-modalx" style="background-color: white !important">
+                                    <div class="content-modalx" style="background-color: white !important;top:0">
                                         <div class="info_modalx">
 
                                             <div class="elementor-image img"><img decoding="async"
