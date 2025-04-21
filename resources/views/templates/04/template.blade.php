@@ -241,7 +241,9 @@
     </style>
 
     <!-- This site is optimized with the Yoast SEO plugin v24.3 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>Faiz &amp; Alin Wedding - Acarakami</title>
+    <title>{{ ucfirst(explode(" ", $title)[0]) }} &amp;
+        {{ ucfirst(explode(" ", $title)[2]) }} Wedding
+    </title>
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Faiz &amp; Alin Wedding - Acarakami">
@@ -1657,9 +1659,8 @@
                             <div class="elementor-widget-container">
                                 <img fetchpriority="high" decoding="async" width="640" height="960"
                                     src="{{asset('assets/themes/04')}}/8NIO8826-768x1152.jpg"
-                                    class="attachment-medium_large size-medium_large wp-image-43402" alt="" {{--
-                                    srcset="https://acarakami.com/wp-content/uploads/2024/12/8NIO8826-768x1152.jpg 768w, https://acarakami.com/wp-content/uploads/2024/12/8NIO8826-200x300.jpg 200w, https://acarakami.com/wp-content/uploads/2024/12/8NIO8826-683x1024.jpg 683w, https://acarakami.com/wp-content/uploads/2024/12/8NIO8826.jpg 867w"
-                                    --}} sizes="(max-width: 640px) 100vw, 640px">
+                                    class="attachment-medium_large size-medium_large wp-image-43402" alt=""
+                                    sizes="(max-width: 640px) 100vw, 640px">
                             </div>
                         </div>
                     </div>
@@ -1706,7 +1707,15 @@
                     data-id="1e17eaa" data-element_type="column"
                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
                     <div class="elementor-widget-wrap elementor-element-populated">
-
+                        <div class="elementor-element elementor-element-66ba3c3 elementor-hidden-mobile elementor-widget elementor-widget-image"
+                            data-id="66ba3c3" data-element_type="widget" data-widget_type="image.default">
+                            <div class="elementor-widget-container">
+                                <img decoding="async" width="500" height="750"
+                                    src="{{asset("assets/themes/04/mempelai pria.JPG")}}"
+                                    class="attachment-medium_large size-medium_large wp-image-43376" alt=""
+                                    sizes="(max-width: 500px) 100vw, 500px">
+                            </div>
+                        </div>
                         <section
                             class="elementor-section elementor-inner-section elementor-element elementor-element-b9025fc elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                             data-id="b9025fc" data-element_type="section"
@@ -1769,47 +1778,15 @@
                     data-id="b9f583c" data-element_type="column"
                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
                     <div class="elementor-widget-wrap elementor-element-populated">
-
-                        {{-- <section
-                            class="elementor-section elementor-inner-section elementor-element elementor-element-482bc7d elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                            data-id="482bc7d" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ace54d5"
-                                    data-id="ace54d5" data-element_type="column">
-                                    <div class="elementor-widget-wrap elementor-element-populated">
-                                        <div class="elementor-element elementor-element-030c04e elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-image"
-                                            data-id="030c04e" data-element_type="widget"
-                                            data-widget_type="image.default">
-                                            <div class="elementor-widget-container">
-                                                <img decoding="async" width="500" height="750"
-                                                    src="{{asset('assets/themes/04')}}/8NIO8826-768x1152.jpg"
-                                                    class="attachment-medium_large size-medium_large wp-image-43376"
-                                                    alt=""
-                                                    srcset="https://acarakami.com/wp-content/uploads/2024/12/8NIO9044.jpg 500w, https://acarakami.com/wp-content/uploads/2024/12/8NIO9044-200x300.jpg 200w"
-                                                    sizes="(max-width: 500px) 100vw, 500px">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b2f9f5d"
-                                    data-id="b2f9f5d" data-element_type="column">
-                                    <div class="elementor-widget-wrap elementor-element-populated">
-                                        <div class="elementor-element elementor-element-df1d87a elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-image"
-                                            data-id="df1d87a" data-element_type="widget"
-                                            data-widget_type="image.default">
-                                            <div class="elementor-widget-container">
-                                                <img decoding="async" width="500" height="750"
-                                                    src="{{asset('assets/themes/04')}}/8NIO8826-768x1152.jpg"
-                                                    class="attachment-medium_large size-medium_large wp-image-43377"
-                                                    alt=""
-                                                    srcset="https://acarakami.com/wp-content/uploads/2024/12/8NIO9029.jpg 500w, https://acarakami.com/wp-content/uploads/2024/12/8NIO9029-200x300.jpg 200w"
-                                                    sizes="(max-width: 500px) 100vw, 500px">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="elementor-element elementor-element-66ba3c3 elementor-hidden-mobile elementor-widget elementor-widget-image"
+                            data-id="66ba3c3" data-element_type="widget" data-widget_type="image.default">
+                            <div class="elementor-widget-container">
+                                <img decoding="async" width="500" height="750"
+                                    src="{{asset("assets/themes/04/mempelai wanita.JPG")}}"
+                                    class="attachment-medium_large size-medium_large wp-image-43376" alt=""
+                                    sizes="(max-width: 500px) 100vw, 500px">
                             </div>
-                        </section> --}}
+                        </div>
                         <section
                             class="elementor-section elementor-inner-section elementor-element elementor-element-14d7969 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                             data-id="14d7969" data-element_type="section"
@@ -2233,7 +2210,7 @@
                 </div>
             </div>
         </section>
-        {{-- <section
+        <section
             class="elementor-section elementor-top-section elementor-element elementor-element-626315d elementor-section-boxed elementor-section-height-default elementor-section-height-default"
             data-id="626315d" data-element_type="section"
             data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -2250,7 +2227,8 @@
                         <section
                             class="elementor-section elementor-inner-section elementor-element elementor-element-988ffa6 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                             data-id="988ffa6" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-container elementor-column-gap-default"
+                                style="flex-direction: column;align-items: center;">
                                 <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8904af3"
                                     data-id="8904af3" data-element_type="column">
                                     <div class="elementor-widget-wrap elementor-element-populated">
@@ -2259,7 +2237,7 @@
                                             data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:300}"
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
-                                                <h3 class="elementor-heading-title elementor-size-small">RSVP</h3>
+                                                <h3 class="elementor-heading-title elementor-size-small">Gallery</h3>
                                             </div>
                                         </div>
                                         <div class="elementor-element elementor-element-dcc587b animated-slow elementor-invisible elementor-widget elementor-widget-heading"
@@ -2267,8 +2245,8 @@
                                             data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}"
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
-                                                <h3 class="elementor-heading-title elementor-size-small">Diharapkan
-                                                    kepada para tamu untuk mengisi form kehadiran di bawah ini</h3>
+                                                {{-- <h3 class="elementor-heading-title elementor-size-small">Diharapkan
+                                                    kepada para tamu untuk mengisi form kehadiran di bawah ini</h3> --}}
                                             </div>
                                         </div>
                                     </div>
@@ -2284,59 +2262,39 @@
                                                     class="qodef-shortcode qodef-m  qodef-qi-wp-forms qodef-button--full-width">
                                                     <div class="wpforms-container wpforms-container-full"
                                                         id="wpforms-43385">
-                                                        <form id="wpforms-form-43385"
-                                                            class="wpforms-validate wpforms-form wpforms-ajax-form"
-                                                            data-formid="43385" method="post"
-                                                            enctype="multipart/form-data"
-                                                            action="https://acarakami.com/faiz-alin/"
-                                                            data-token="16ede9ab93486337b5635559fe4702e3"
-                                                            novalidate="novalidate"><noscript
-                                                                class="wpforms-error-noscript">Please enable JavaScript
-                                                                in your browser to complete this form.</noscript>
-                                                            <div class="wpforms-field-container">
-                                                                <div id="wpforms-43385-field_1-container"
-                                                                    class="wpforms-field wpforms-field-text"
-                                                                    data-field-id="1"><label class="wpforms-field-label"
-                                                                        for="wpforms-43385-field_1">Nama Anda <span
-                                                                            class="wpforms-required-label">*</span></label><input
-                                                                        type="text" id="wpforms-43385-field_1"
-                                                                        class="wpforms-field-large wpforms-field-required"
-                                                                        name="wpforms[fields][1]"
-                                                                        placeholder="Tulis Nama Anda" required=""></div>
-                                                                <div id="wpforms-43385-field_4-container"
-                                                                    class="wpforms-field wpforms-field-select wpforms-field-select-style-classic"
-                                                                    data-field-id="4"><label class="wpforms-field-label"
-                                                                        for="wpforms-43385-field_4">Konfirmasi Kehadiran
-                                                                        <span
-                                                                            class="wpforms-required-label">*</span></label><select
-                                                                        id="wpforms-43385-field_4"
-                                                                        class="wpforms-field-large wpforms-field-required"
-                                                                        name="wpforms[fields][4]" required="required">
-                                                                        <option value="" class="placeholder" disabled=""
-                                                                            selected="selected">Konfirmasi Kehadiran
-                                                                            Anda</option>
-                                                                        <option value="Hadir">Hadir</option>
-                                                                        <option value="Mungkin Hadir">Mungkin Hadir
-                                                                        </option>
-                                                                        <option value="Tidak Hadir">Tidak Hadir</option>
-                                                                    </select></div>
-                                                            </div><!-- .wpforms-field-container -->
-                                                            <div class="wpforms-submit-container"><input type="hidden"
-                                                                    name="wpforms[id]" value="43385"><input
-                                                                    type="hidden" name="wpforms[author]"
-                                                                    value="1"><input type="hidden"
-                                                                    name="wpforms[post_id]" value="43372"><button
-                                                                    type="submit" name="wpforms[submit]"
-                                                                    id="wpforms-submit-43385" class="wpforms-submit"
-                                                                    data-alt-text="Sending..."
-                                                                    data-submit-text="Konfirmasi" aria-live="assertive"
-                                                                    value="wpforms-submit">Konfirmasi</button><img
-                                                                    loading="lazy" decoding="async"
-                                                                    src="{{asset('assets/themes/04')}}/submit-spin.svg"
-                                                                    class="wpforms-submit-spinner"
-                                                                    style="display: none;" width="26" height="26"
-                                                                    alt="Loading"></div>
-                                                        </form>
+                                                        <style>
+                                                            .gallery {
+                                                                display: flex;
+                                                                gap: 10px;
+                                                                justify-content: center;
+                                                            }
+
+                                                            .gallery .item {
+                                                                width: calc(100% / 3 - 20px);
+                                                            }
+
+                                                            @media (max-width: 1024px) {
+                                                                .gallery .item {
+                                                                    width: calc(100% / 3);
+                                                                }
+                                                            }
+
+                                                            /* @media (max-width: 600px) {
+                                                                .gallery {
+                                                                    grid-template-columns: 1fr;
+                                                                }
+                                                            } */
+                                                        </style>
+                                                        <div class="gallery">
+                                                            @foreach ([1, 2, 3, 4, 5, 6, 7] as $item)
+
+                                                                <div class="item">
+                                                                    <img style="border-radius: 10px"
+                                                                        src="{{asset("assets/themes/04/$item.JPG")}}"
+                                                                        alt="">
+                                                                </div>
+                                                            @endforeach
+                                                        </div>
                                                     </div> <!-- .wpforms-container -->
                                                 </div>
                                             </div>
@@ -2348,7 +2306,7 @@
                     </div>
                 </div>
             </div>
-        </section> --}}
+        </section>
         {{-- <section
             class="elementor-section elementor-top-section elementor-element elementor-element-4fa2723 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
             data-id="4fa2723" data-element_type="section"
@@ -2609,7 +2567,8 @@
                                                         </div><!--.cui-wrap-form-->
                                                         <div id="cui-comment-status-43372"
                                                             class="cui-comment-status cui-loading"
-                                                            style="display: block;"><span class="cuio-loading"></span>
+                                                            style="display: block;">
+                                                            <span class="cuio-loading"></span>
                                                         </div>
                                                         <div id="cui-box" class="cui-box">
                                                             <ul id="cui-container-comment-43372"
@@ -2617,7 +2576,8 @@
                                                                 data-order="DESC"></ul>
                                                         </div>
                                                         <div id="cui-holder-id-43372"
-                                                            class="cui-holder-43372 cui-holder"></div>
+                                                            class="cui-holder-43372 cui-holder">
+                                                        </div>
                                                     </div><!--.cui-wrap-comments-->
                                                 </div><!--.cui-wrapper-->
                                                 <style>
@@ -2826,7 +2786,8 @@
                             data-id="574831e8" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
                                 <h3 class="elementor-heading-title elementor-size-small"><a
-                                        href="https://acarakami.com/">© Copyright Acarakami.com</a></h3>
+                                        href="https://acarakami.com/">©
+                                        Copyright Acarakami.com</a></h3>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-3ea6c623 elementor-widget elementor-widget-heading"
@@ -2841,12 +2802,11 @@
                             data-widget_type="weddingpress-wellcome.default">
                             <div class="elementor-widget-container">
 
-                                <div class="modalx"
-                                    data-sampul="https://acarakami.com/wp-content/uploads/2022/12/prada-paper.jpg"
-                                    style="background-image: url(&quot;https://acarakami.com/wp-content/uploads/2022/12/prada-paper.jpg&quot;);">
+                                <div class="modalx" data-sampul="{{asset("assets/themes/04")}}/prada-paper.jpg"
+                                    style="background-image: url(&quot;{{asset("assets/themes/04")}}/prada-paper.jpg&quot;);">
 
-                                    <div class="overlay"></div>
-                                    <div class="content-modalx" style="background-color: white !important;top:0">
+                                    <div class="overlayy"></div>
+                                    <div class="content-modalx">
                                         <div class="info_modalx">
 
                                             <div class="elementor-image img"><img decoding="async"
