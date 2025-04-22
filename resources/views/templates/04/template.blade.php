@@ -1788,6 +1788,42 @@
                             </div>
                         </div>
                         <section
+                            class="elementor-section elementor-inner-section elementor-element elementor-element-482bc7d elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                            data-id="482bc7d" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ace54d5"
+                                    data-id="ace54d5" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-030c04e elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-image"
+                                            data-id="030c04e" data-element_type="widget"
+                                            data-widget_type="image.default">
+                                            <div class="elementor-widget-container">
+                                                <img decoding="async" width="500" height="750"
+                                                    src="{{asset("assets/themes/04/mempelai pria.JPG")}}"
+                                                    class="attachment-medium_large size-medium_large wp-image-43376"
+                                                    alt="" sizes="(max-width: 500px) 100vw, 500px">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b2f9f5d"
+                                    data-id="b2f9f5d" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-df1d87a elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-image"
+                                            data-id="df1d87a" data-element_type="widget"
+                                            data-widget_type="image.default">
+                                            <div class="elementor-widget-container">
+                                                <img decoding="async" width="500" height="750"
+                                                    src="{{asset("assets/themes/04/mempelai wanita.JPG")}}"
+                                                    class="attachment-medium_large size-medium_large wp-image-43377"
+                                                    alt="" sizes="(max-width: 500px) 100vw, 500px">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section
                             class="elementor-section elementor-inner-section elementor-element elementor-element-14d7969 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                             data-id="14d7969" data-element_type="section"
                             data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
