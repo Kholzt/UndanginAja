@@ -1658,7 +1658,7 @@
                             data-id="c2ac751" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
                                 <img fetchpriority="high" decoding="async" width="640" height="960"
-                                    src="{{asset('assets/themes/04')}}/8NIO8826-768x1152.jpg"
+                                    src="{{asset('assets/themes/04')}}/7.jpg"
                                     class="attachment-medium_large size-medium_large wp-image-43402" alt=""
                                     sizes="(max-width: 640px) 100vw, 640px">
                             </div>
