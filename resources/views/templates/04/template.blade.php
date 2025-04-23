@@ -2325,7 +2325,7 @@
                                                             } */
                                                         </style>
                                                         <div class="gallery">
-                                                            @foreach ([1, 2, 3, 4, 6, 7] as $item)
+                                                            @foreach ([1, 2, 7, 4, 6, 3] as $item)
 
                                                                 <div class="item">
                                                                     <img style="border-radius: 10px"
