@@ -1805,10 +1805,15 @@
                                             data-id="030c04e" data-element_type="widget"
                                             data-widget_type="image.default">
                                             <div class="elementor-widget-container">
-                                                <img decoding="async" width="500" height="750"
-                                                    src="{{asset("assets/themes/04/mempelai pria.JPG")}}"
-                                                    class="attachment-medium_large size-medium_large wp-image-43376"
-                                                    alt="" sizes="(max-width: 500px) 100vw, 500px">
+                                                <div class=""
+                                                    style="overflow:hidden;border-style: solid;border-width: 10px 10px 10px 10px;border-color: #A8A28F;border-radius: 200px 200px 200px 200px;">
+
+                                                    <img decoding="async" width="500" height="750"
+                                                        src="{{asset("assets/themes/04/mempelai pria.JPG")}}"
+                                                        class="attachment-medium_large size-medium_large wp-image-43376"
+                                                        alt="" style="transform: scale(1.2)"
+                                                        sizes="(max-width: 500px) 100vw, 500px">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1820,10 +1825,15 @@
                                             data-id="df1d87a" data-element_type="widget"
                                             data-widget_type="image.default">
                                             <div class="elementor-widget-container">
-                                                <img decoding="async" width="500" height="750"
-                                                    src="{{asset("assets/themes/04/mempelai wanita.JPG")}}"
-                                                    class="attachment-medium_large size-medium_large wp-image-43377"
-                                                    alt="" sizes="(max-width: 500px) 100vw, 500px">
+                                                <div class=""
+                                                    style="overflow:hidden;border-style: solid;border-width: 10px 10px 10px 10px;border-color: #A8A28F;border-radius: 200px 200px 200px 200px;">
+
+                                                    <img decoding="async" width="500" height="750"
+                                                        src="{{asset("assets/themes/04/mempelai wanita.JPG")}}"
+                                                        class="attachment-medium_large size-medium_large wp-image-43377"
+                                                        alt="" style="transform: scale(1.2)"
+                                                        sizes="(max-width: 500px) 100vw, 500px">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
