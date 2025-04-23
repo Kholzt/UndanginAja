@@ -256,8 +256,8 @@
     <meta property="article:publisher" content="http://facebook.com/Acarakami">
     <meta property="article:published_time" content="2024-12-11T02:44:34+00:00">
     <meta property="article:modified_time" content="2025-01-10T05:27:16+00:00">
-    <meta property="og:image" content="{{asset("assets/themes/04/preview.png")}}">
-
+    <meta property="og:image"
+        content="https://acarakami.com/wp-content/uploads/2024/12/acarakami.com_faiz-alin-wedding__preview_id43372preview_nonce45f936eb05previewtrueiPad-Mini.jpg">
     <meta property="og:image:width" content="700">
     <meta property="og:image:height" content="486">
     <meta property="og:image:type" content="image/jpeg">
