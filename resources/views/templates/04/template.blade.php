@@ -259,7 +259,7 @@
     <meta property="og:image" content="{{asset("assets/themes/04/preview.png")}}">
     <meta property="og:image:width" content="700">
     <meta property="og:image:height" content="486">
-    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:type" content="image/png">
     <meta name="author" content="acarakami">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:label1" content="Written by">
