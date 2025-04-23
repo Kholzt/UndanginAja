@@ -246,9 +246,11 @@
     </title>
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Faiz &amp; Alin Wedding - Acarakami">
+    <meta property="og:title" content="{{ ucfirst(explode(" ", $title)[0]) }} &amp;
+        {{ ucfirst(explode(" ", $title)[2]) }} Wedding ">
     <meta property="og:description"
-        content="Together with their families Faiz and Alin We invite you to celebrate our wedding Saturday, December 28th 2024 at The Westlake Resort Yogyakarta Meet Alin and Faiz Kedua Mempelai Faiz Faiz Angger Kusuma Putra Kedua dari Pasangan Bapak Sastro Priyono&amp; Ibu Hindri Laras Alin An Nisaa’ Nurawalin Sulistyo Putri Pertama dari Pasangan Bapak Djoko Sulistyo&amp; … Continue reading &quot;Faiz &amp; Alin Wedding&quot;">
+        content="Together with their families {{ ucfirst(explode(" ", $title)[0]) }} &amp;
+        {{ ucfirst(explode(" ", $title)[2]) }} We invite you to celebrate our wedding Saturday, December 28th 2024 at The Westlake Resort Yogyakarta Meet Alin and Faiz Kedua Mempelai Faiz Faiz Angger Kusuma Putra Kedua dari Pasangan Bapak Sastro Priyono&amp; Ibu Hindri Laras Alin An Nisaa’ Nurawalin Sulistyo Putri Pertama dari Pasangan Bapak Djoko Sulistyo&amp; … Continue reading &quot;Faiz &amp; Alin Wedding&quot;">
     <meta property="og:url" content="https://acarakami.com/faiz-alin/">
     <meta property="og:site_name" content="Acarakami">
     <meta property="article:publisher" content="http://facebook.com/Acarakami">
@@ -1658,7 +1660,7 @@
                             data-id="c2ac751" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
                                 <img fetchpriority="high" decoding="async" width="640" height="960"
-                                    src="{{asset('assets/themes/04')}}/7.JPG"
+                                    src="{{asset('assets/themes/04')}}/5.JPG"
                                     class="attachment-medium_large size-medium_large wp-image-43402" alt=""
                                     sizes="(max-width: 640px) 100vw, 640px">
                             </div>
@@ -2323,7 +2325,7 @@
                                                             } */
                                                         </style>
                                                         <div class="gallery">
-                                                            @foreach ([1, 2, 3, 4, 5, 6, 7] as $item)
+                                                            @foreach ([1, 2, 3, 4, 6, 7] as $item)
 
                                                                 <div class="item">
                                                                     <img style="border-radius: 10px"
