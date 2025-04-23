@@ -256,10 +256,12 @@
     <meta property="article:publisher" content="http://facebook.com/Acarakami">
     <meta property="article:published_time" content="2024-12-11T02:44:34+00:00">
     <meta property="article:modified_time" content="2025-01-10T05:27:16+00:00">
-    <meta property="og:image" content="{{asset("assets/themes/04/preview.png")}}">
-    <meta property="og:image:width" content="700">
-    <meta property="og:image:height" content="486">
+
+    <meta property="og:image" content="{{ asset('assets/themes/04/preview.png') }}">
     <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
     <meta name="author" content="acarakami">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:label1" content="Written by">
