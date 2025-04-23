@@ -261,7 +261,7 @@
         content="https://acarakami.com/wp-content/uploads/2024/12/acarakami.com_faiz-alin-wedding__preview_id43372preview_nonce45f936eb05previewtrueiPad-Mini.jpg">
     --}}
 
-    <meta property="og:image" content="{{asset(" assets/themes/04/preview.jpg")}}">
+    <meta property="og:image" content="{{asset("assets/themes/04/preview.jpg")}}">
 
     <meta property="og:image:width" content="700">
     <meta property="og:image:height" content="486">
