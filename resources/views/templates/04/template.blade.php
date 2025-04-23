@@ -1811,7 +1811,7 @@
                                                     <img decoding="async" width="500" height="750"
                                                         src="{{asset("assets/themes/04/mempelai pria.JPG")}}"
                                                         class="attachment-medium_large size-medium_large wp-image-43376"
-                                                        alt="" style="transform: scale(1.2)"
+                                                        alt="" style="transform: scale(1.5)"
                                                         sizes="(max-width: 500px) 100vw, 500px">
                                                 </div>
                                             </div>
@@ -1831,7 +1831,7 @@
                                                     <img decoding="async" width="500" height="750"
                                                         src="{{asset("assets/themes/04/mempelai wanita.JPG")}}"
                                                         class="attachment-medium_large size-medium_large wp-image-43377"
-                                                        alt="" style="transform: scale(1.2)"
+                                                        alt="" style="transform: scale(1.5)"
                                                         sizes="(max-width: 500px) 100vw, 500px">
                                                 </div>
                                             </div>
