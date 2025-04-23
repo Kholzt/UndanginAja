@@ -251,13 +251,14 @@
     <meta property="og:description"
         content="Together with their families {{ ucfirst(explode(" ", $title)[0]) }} &amp;
         {{ ucfirst(explode(" ", $title)[2]) }} We invite you to celebrate our wedding Saturday, December 28th 2024 at The Westlake Resort Yogyakarta Meet Alin and Faiz Kedua Mempelai Faiz Faiz Angger Kusuma Putra Kedua dari Pasangan Bapak Sastro Priyono&amp; Ibu Hindri Laras Alin An Nisaa’ Nurawalin Sulistyo Putri Pertama dari Pasangan Bapak Djoko Sulistyo&amp; … Continue reading &quot;Faiz &amp; Alin Wedding&quot;">
-    <meta property="og:url" content="https://momenku.kholzt.com/firman-&-iin">
-    <meta property="og:site_name" content="MomenKu">
-    {{--
-    <meta property="article:publisher" content="http://facebook.com/Acarakami"> --}}
+    <meta property="og:url" content="https://acarakami.com/faiz-alin/">
+    <meta property="og:site_name" content="Acarakami">
+    <meta property="article:publisher" content="http://facebook.com/Acarakami">
     <meta property="article:published_time" content="2024-12-11T02:44:34+00:00">
     <meta property="article:modified_time" content="2025-01-10T05:27:16+00:00">
+
     <meta property="og:image" content="{{asset("assets/themes/04/preview.png")}}">
+
     <meta property="og:image:width" content="700">
     <meta property="og:image:height" content="486">
     <meta property="og:image:type" content="image/jpeg">
