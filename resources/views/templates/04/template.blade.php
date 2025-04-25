@@ -2361,7 +2361,7 @@
                 </div>
             </div>
         </section>
-        {{-- <section
+        <section
             class="elementor-section elementor-top-section elementor-element elementor-element-4fa2723 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
             data-id="4fa2723" data-element_type="section"
             data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -2420,8 +2420,8 @@
                                             data-id="80488a4" data-element_type="widget"
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
-                                                <h3 class="elementor-heading-title elementor-size-small">1370 0113 3265
-                                                    3</h3>
+                                                <h3 class="elementor-heading-title elementor-size-small">3160 0103 0565
+                                                    536</h3>
                                             </div>
                                         </div>
                                         <div class="elementor-element elementor-element-253c048 elementor-widget elementor-widget-heading"
@@ -2435,15 +2435,15 @@
                                             data-id="7d6c27b" data-element_type="widget"
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
-                                                <h3 class="elementor-heading-title elementor-size-small">Annisaa
-                                                    Nurawalin Sulistyo</h3>
+                                                <h3 class="elementor-heading-title elementor-size-small">a.n Reza Nur
+                                                    Aini</h3>
                                             </div>
                                         </div>
                                         <div class="elementor-element elementor-element-3e3d9ac elementor-widget elementor-widget-heading"
                                             data-id="3e3d9ac" data-element_type="widget"
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
-                                                <h3 class="elementor-heading-title elementor-size-small">Bank Mandiri
+                                                <h3 class="elementor-heading-title elementor-size-small">Bank BRI
                                                 </h3>
                                             </div>
                                         </div>
@@ -2454,8 +2454,8 @@
                     </div>
                 </div>
             </div>
-        </section> --}}
-        {{-- <section
+        </section>
+        <section
             class="elementor-section elementor-top-section elementor-element elementor-element-e7ad8f7 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
             data-id="e7ad8f7" data-element_type="section"
             data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -2478,7 +2478,7 @@
 
                                 <div class="head-title"></div>
                                 <div class="elementor-button-wrapper">
-                                    <div class="copy-content spancontent" style="display: none;">13700113326‍53</div>
+                                    <div class="copy-content spancontent" style="display: none;">316001030565536</div>
 
                                     <a style="cursor:pointer;" onclick="copyText(this)" data-message="berhasil disalin"
                                         class="elementor-button" role="button">
@@ -2534,7 +2534,7 @@
                     </div>
                 </div>
             </div>
-        </section> --}}
+        </section>
         {{-- <section
             class="elementor-section elementor-top-section elementor-element elementor-element-2b7ce792 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
             data-id="2b7ce792" data-element_type="section"
