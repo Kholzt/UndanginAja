@@ -250,7 +250,7 @@
         {{ ucfirst(explode(" ", $title)[2]) }} Wedding ">
     <meta property="og:description"
         content="Together with their families {{ ucfirst(explode(" ", $title)[0]) }} &amp;
-        {{ ucfirst(explode(" ", $title)[2]) }} We invite you to celebrate our wedding Saturday, December 28th 2024 at The Westlake Resort Yogyakarta Meet Alin and Faiz Kedua Mempelai Faiz Faiz Angger Kusuma Putra Kedua dari Pasangan Bapak Sastro Priyono&amp; Ibu Hindri Laras Alin An Nisaa’ Nurawalin Sulistyo Putri Pertama dari Pasangan Bapak Djoko Sulistyo&amp; … Continue reading &quot;Faiz &amp; Alin Wedding&quot;">
+        {{ ucfirst(explode(" ", $title)[2]) }} We invite you to celebrate our wedding {{ Helpers::getFormatTanggal($mainEvent->event_date_start) }} at {{$mainEvent->address}} Meet {{ ucfirst(explode(" ", $title)[0]) }} and {{ ucfirst(explode(" ", $title)[2]) }} Kedua Mempelai  {{ $wedding_details->groom_name }}  {{ $wedding_details->parent_groom }} {{ $wedding_details->bride_name }} {{ $wedding_details->parent_bride }}&amp;">
     <meta property="og:url" content="https://acarakami.com/faiz-alin/">
     <meta property="og:site_name" content="Acarakami">
     <meta property="article:publisher" content="http://facebook.com/Acarakami">
@@ -2404,7 +2404,7 @@
                                             data-widget_type="image.default">
                                             <div class="elementor-widget-container">
                                                 <img loading="lazy" decoding="async" width="391" height="113"
-                                                    src="{{asset('assets/themes/04')}}/bank_mandiri.svg"
+                                                    src="{{asset('assets/themes/04')}}/bank-logo.png"
                                                     class="attachment-medium size-medium wp-image-8885" alt="">
                                             </div>
                                         </div>
@@ -2435,7 +2435,7 @@
                                             data-id="7d6c27b" data-element_type="widget"
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
-                                                <h3 class="elementor-heading-title elementor-size-small">a.n Reza Nur
+                                                <h3 class="elementor-heading-title elementor-size-small">Reza Nur
                                                     Aini</h3>
                                             </div>
                                         </div>
