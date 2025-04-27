@@ -2319,12 +2319,14 @@
                                                         <style>
                                                             .gallery {
                                                                 display: flex;
+                                                                flex-wrap: wrap;
                                                                 gap: 10px;
                                                                 justify-content: center;
                                                             }
 
                                                             .gallery .item {
                                                                 width: calc(100% / 3 - 20px);
+                                                                cursor: pointer;
                                                             }
 
                                                             @media (max-width: 1024px) {
@@ -2333,22 +2335,99 @@
                                                                 }
                                                             }
 
-                                                            /* @media (max-width: 600px) {
-                                                                .gallery {
-                                                                    grid-template-columns: 1fr;
+                                                            .modal {
+                                                                display: none;
+                                                                position: fixed;
+                                                                z-index: 999;
+                                                                left: 0;
+                                                                top: 0;
+                                                                width: 100%;
+                                                                height: 100%;
+                                                                background-color: rgba(0, 0, 0, 0.8);
+                                                                align-items: center;
+                                                                justify-content: center;
+                                                                transition: opacity 0.3s ease;
+                                                            }
+
+                                                            .modal.show {
+                                                                display: flex;
+                                                                opacity: 1;
+                                                            }
+
+                                                            .modal.hide {
+                                                                opacity: 0;
+                                                                transition: opacity 0.3s ease;
+                                                            }
+
+                                                            .modal-content {
+                                                                max-width: 90%;
+                                                                max-height: 90%;
+                                                                border-radius: 10px;
+                                                                object-fit: contain;
+                                                                background-color: transparent;
+                                                                border-radius: 10px;
+                                                                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+                                                                animation: zoomIn 0.3s ease;
+                                                            }
+
+                                                            @keyframes zoomIn {
+                                                                from {
+                                                                    transform: scale(0.8);
                                                                 }
-                                                            } */
+
+                                                                to {
+                                                                    transform: scale(1);
+                                                                }
+                                                            }
+
+                                                            .modal-close {
+                                                                position: absolute;
+                                                                top: 20px;
+                                                                right: 30px;
+                                                                font-size: 35px;
+                                                                color: #fff;
+                                                                cursor: pointer;
+                                                                z-index: 999;
+                                                            }
                                                         </style>
+
                                                         <div class="gallery">
                                                             @foreach ([1, 2, 7, 4, 6, 3] as $item)
-
                                                                 <div class="item">
                                                                     <img style="border-radius: 10px"
-                                                                        src="{{asset("assets/themes/04/$item.JPG")}}"
-                                                                        alt="">
+                                                                        src="{{ asset("assets/themes/04/$item.JPG") }}"
+                                                                        alt="" onclick="openModal(this.src)">
                                                                 </div>
                                                             @endforeach
                                                         </div>
+
+                                                        <!-- Modal -->
+                                                        <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                                            <span class="modal-close"
+                                                                onclick="closeModal(event)">&times;</span>
+                                                            <img class="modal-content" id="modalImage">
+                                                        </div>
+
+                                                        <script>
+                                                            const modal = document.getElementById('imageModal');
+                                                            const modalImg = document.getElementById('modalImage');
+
+                                                            function openModal(src) {
+                                                                modalImg.src = src;
+                                                                modal.classList.add('show');
+                                                                modal.classList.remove('hide');
+                                                            }
+
+                                                            function closeModal(event) {
+                                                                if (event.target === modal || event.target.classList.contains('modal-close')) {
+                                                                    modal.classList.add('hide');
+                                                                    setTimeout(() => {
+                                                                        modal.classList.remove('show');
+                                                                    }, 300); // sesuai durasi transition
+                                                                }
+                                                            }
+                                                        </script>
+
                                                     </div> <!-- .wpforms-container -->
                                                 </div>
                                             </div>
