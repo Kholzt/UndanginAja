@@ -2360,8 +2360,8 @@
                                                             }
 
                                                             .modal-content {
-                                                                max-width: 90%;
-                                                                max-height: 90%;
+                                                                max-width: 95% !important;
+                                                                max-height: 80% !important;
                                                                 border-radius: 10px;
                                                                 object-fit: contain;
                                                                 background-color: transparent;
