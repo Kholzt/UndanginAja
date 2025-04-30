@@ -2965,8 +2965,8 @@
 
 
 
-                                            <div class="wdp-dear" style="width: auto !important;">Special invitation to
-                                            </div>
+                                            <!-- <div class="wdp-dear" style="width: auto !important;">Special invitation to
+                                            </div> -->
                                             <div class="wdp-name namatamu" style="width: auto !important;"></div>
                                             <div class="wdp-text" style="width: auto !important;">Tanpa mengurangi rasa
                                                 hormat, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di acara
