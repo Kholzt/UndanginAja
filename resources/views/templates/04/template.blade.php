@@ -1991,6 +1991,19 @@
                                                     </h3>
                                                 </div>
                                             </div>
+                                            
+                                            @if($mainEvent->id == $event->id)
+                                            <div class="elementor-element elementor-element-934e021 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+                                                data-id="934e021" data-element_type="widget"
+                                                data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}"
+                                                data-widget_type="heading.default">
+                                                <div class="elementor-widget-container">
+                                                    <h3 class="elementor-heading-title elementor-size-small">
+                                                        {{ Helpers::getJam($event->event_date_start) }} - {{ Helpers::getJam($event->event_date_end) }}
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            @endif
                                         </div>
                                     </div>
                                     <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-36c19452 elementor-invisible"
