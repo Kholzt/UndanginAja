@@ -1999,7 +1999,7 @@
                                                 data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
                                                     <h3 class="elementor-heading-title elementor-size-small">
-                                                        {{ Helpers::getJam($event->event_date_start) }} - {{ Helpers::getJam($event->event_date_end) }}
+                                                        {{ Helpers::getJam($event->event_date_start) }} - {{ Helpers::getJam($event->event_date_end) }} WIB
                                                     </h3>
                                                 </div>
                                             </div>
